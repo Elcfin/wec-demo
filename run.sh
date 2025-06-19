@@ -3,8 +3,8 @@
 # Global parameters for the experiment
 k=128
 m=4
-b=32
-s=16
+b=8
+s=8
 f=/home/elcfin/shm
 
 # Check if temporary directory exists, create it if not

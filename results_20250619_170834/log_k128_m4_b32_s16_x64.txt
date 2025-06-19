@@ -1,0 +1,176 @@
+Verbose mode enabled.
+Output will be saved to: results_20250619_170834/k128_m4_b32_s16_x64.csv
+Output file opened successfully.
+=== Starting single test ===
+Initializing temporary data files...
+Temporary data files initialized.
+Thread 129879880234688 processing stripe 1
+  Processing batch 1/2 (blocks 0 to 63)
+  Processing batch 2/2 (blocks 64 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 1.389 seconds
+  I/O overhead: 1.001 seconds
+    - Read time: 0.995 seconds
+    - Network send time (simulated): 0.006 seconds
+  Total time: 3.197 seconds
+  Other overhead: 0.807 seconds
+Thread 129879880234688 processing stripe 2
+  Processing batch 1/2 (blocks 0 to 63)
+  Processing batch 2/2 (blocks 64 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: -0.455 seconds
+  I/O overhead: 0.996 seconds
+    - Read time: 0.988 seconds
+    - Network send time (simulated): 0.008 seconds
+  Total time: 1.359 seconds
+  Other overhead: 0.818 seconds
+Thread 129879880234688 processing stripe 3
+  Processing batch 1/2 (blocks 0 to 63)
+  Processing batch 2/2 (blocks 64 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 1.373 seconds
+  I/O overhead: 0.986 seconds
+    - Read time: 0.979 seconds
+    - Network send time (simulated): 0.007 seconds
+  Total time: 3.15 seconds
+  Other overhead: 0.791 seconds
+Thread 129879880234688 processing stripe 4
+  Processing batch 1/2 (blocks 0 to 63)
+  Processing batch 2/2 (blocks 64 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 1.466 seconds
+  I/O overhead: 0.984 seconds
+    - Read time: 0.978 seconds
+    - Network send time (simulated): 0.006 seconds
+  Total time: 3.272 seconds
+  Other overhead: 0.822 seconds
+Thread 129879880234688 processing stripe 5
+  Processing batch 1/2 (blocks 0 to 63)
+  Processing batch 2/2 (blocks 64 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 1.468 seconds
+  I/O overhead: 0.989 seconds
+    - Read time: 0.981 seconds
+    - Network send time (simulated): 0.008 seconds
+  Total time: 3.295 seconds
+  Other overhead: 0.838 seconds
+Thread 129879880234688 processing stripe 6
+  Processing batch 1/2 (blocks 0 to 63)
+  Processing batch 2/2 (blocks 64 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 1.341 seconds
+  I/O overhead: 0.988 seconds
+    - Read time: 0.981 seconds
+    - Network send time (simulated): 0.007 seconds
+  Total time: 3.146 seconds
+  Other overhead: 0.817 seconds
+Thread 129879880234688 processing stripe 7
+  Processing batch 1/2 (blocks 0 to 63)
+  Processing batch 2/2 (blocks 64 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 1.396 seconds
+  I/O overhead: 1 seconds
+    - Read time: 0.993 seconds
+    - Network send time (simulated): 0.007 seconds
+  Total time: 3.234 seconds
+  Other overhead: 0.838 seconds
+Thread 129879880234688 processing stripe 8
+  Processing batch 1/2 (blocks 0 to 63)
+  Processing batch 2/2 (blocks 64 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 1.5 seconds
+  I/O overhead: 1.031 seconds
+    - Read time: 1.023 seconds
+    - Network send time (simulated): 0.008 seconds
+  Total time: 3.374 seconds
+  Other overhead: 0.843 seconds
+Thread 129879880234688 processing stripe 9
+  Processing batch 1/2 (blocks 0 to 63)
+  Processing batch 2/2 (blocks 64 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 1.431 seconds
+  I/O overhead: 1.012 seconds
+    - Read time: 1.005 seconds
+    - Network send time (simulated): 0.007 seconds
+  Total time: 3.29 seconds
+  Other overhead: 0.847 seconds
+Thread 129879880234688 processing stripe 10
+  Processing batch 1/2 (blocks 0 to 63)
+  Processing batch 2/2 (blocks 64 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 1.499 seconds
+  I/O overhead: 1.003 seconds
+    - Read time: 0.995 seconds
+    - Network send time (simulated): 0.008 seconds
+  Total time: 3.294 seconds
+  Other overhead: 0.792 seconds
+Thread 129879880234688 processing stripe 11
+  Processing batch 1/2 (blocks 0 to 63)
+  Processing batch 2/2 (blocks 64 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 1.428 seconds
+  I/O overhead: 0.978 seconds
+    - Read time: 0.971 seconds
+    - Network send time (simulated): 0.007 seconds
+  Total time: 3.225 seconds
+  Other overhead: 0.819 seconds
+Thread 129879880234688 processing stripe 12
+  Processing batch 1/2 (blocks 0 to 63)
+  Processing batch 2/2 (blocks 64 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 1.661 seconds
+  I/O overhead: -1.005 seconds
+    - Read time: -1.012 seconds
+    - Network send time (simulated): 0.007 seconds
+  Total time: 1.5 seconds
+  Other overhead: 0.844 seconds
+Thread 129879880234688 processing stripe 13
+  Processing batch 1/2 (blocks 0 to 63)
+  Processing batch 2/2 (blocks 64 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 1.591 seconds
+  I/O overhead: 1.032 seconds
+    - Read time: 1.024 seconds
+    - Network send time (simulated): 0.008 seconds
+  Total time: 3.465 seconds
+  Other overhead: 0.842 seconds
+Thread 129879880234688 processing stripe 14
+  Processing batch 1/2 (blocks 0 to 63)
+  Processing batch 2/2 (blocks 64 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 1.403 seconds
+  I/O overhead: 1.029 seconds
+    - Read time: 1.02 seconds
+    - Network send time (simulated): 0.009 seconds
+  Total time: 3.242 seconds
+  Other overhead: 0.81 seconds
+Thread 129879880234688 processing stripe 15
+  Processing batch 1/2 (blocks 0 to 63)
+  Processing batch 2/2 (blocks 64 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 1.438 seconds
+  I/O overhead: 0.997 seconds
+    - Read time: 0.99 seconds
+    - Network send time (simulated): 0.007 seconds
+  Total time: 3.261 seconds
+  Other overhead: 0.826 seconds
+Thread 129879880234688 processing stripe 16
+  Processing batch 1/2 (blocks 0 to 63)
+  Processing batch 2/2 (blocks 64 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 1.56 seconds
+  I/O overhead: 1.044 seconds
+    - Read time: 1.036 seconds
+    - Network send time (simulated): 0.008 seconds
+  Total time: 3.426 seconds
+  Other overhead: 0.822 seconds
+
+=== In-Memory EC Encoding Completed ===
+Total encoding time: 49.95 seconds
+  Computation time: 21.489 seconds (43.021% of total)
+  Computation throughput: 3049.75 MB/s
+  I/O overhead: 14.065 seconds (28.1582% of total)
+    - Read time: 13.947 seconds
+    - Network send time (simulated): 0.118 seconds
+  Other overhead: 14.396 seconds (28.8208% of total)
+Encoding throughput: 1312.03 MB/s

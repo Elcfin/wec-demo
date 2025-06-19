@@ -461,7 +461,8 @@ int main(int argc, char *argv[])
     bool verbose = false;
     uint64_t stripes_count = 16;
     uint64_t part_per_stripe = 32; // x
-    uint64_t parallel_count = 2;   // y
+    uint64_t xy = 64;
+    // uint64_t parallel_count = 2;   // y
     string temp_dir = "/dev/shm";  // /home/elcfin/shm
 
     bool batch = false;
@@ -476,11 +477,12 @@ int main(int argc, char *argv[])
         {"temp_dir", required_argument, 0, 'f'},
         {"stripes", required_argument, 0, 's'},
         {"part_per_stripe", required_argument, 0, 'x'},
-        {"parallel_count", required_argument, 0, 'y'},
+        // {"parallel_count", required_argument, 0, 'y'},
+        {"xy", required_argument, 0, 'a'},
         {0, 0, 0, 0}};
 
     int opt;
-    while ((opt = getopt_long(argc, argv, "hk:b:to:vf:s:x:y:", long_options, nullptr)) != -1)
+    while ((opt = getopt_long(argc, argv, "hk:b:to:vf:s:x:a:", long_options, nullptr)) != -1)
     {
         switch (opt)
         {
@@ -496,7 +498,8 @@ int main(int argc, char *argv[])
                  << "  -f, --temp_dir <dir> Temporary directory for data files (default: /dev/shm)\n"
                  << "  -s, --stripes N       Set number of stripes (default: 10)\n"
                  << "  -x, --part_per_stripe N Set number of parts per stripe (default: 32)\n"
-                 << "  -y, --parallel_count N Set parallel count (default: 2)\n";
+                 << "  -a, --xy N            Set x and y (default: 64)\n";
+                //  << "  -y, --parallel_count N Set parallel count (default: 2)\n";
             return 0;
         case 'k':
             k = atoi(optarg);
@@ -537,13 +540,16 @@ int main(int argc, char *argv[])
                 return 1;
             }
             break;
-        case 'y':
-            parallel_count = atoi(optarg);
-            if (parallel_count < 1)
-            {
-                cerr << "Error: Parallel count must be at least 1" << endl;
-                return 1;
-            }
+        // case 'y':
+        //     parallel_count = atoi(optarg);
+        //     if (parallel_count < 1)
+        //     {
+        //         cerr << "Error: Parallel count must be at least 1" << endl;
+        //         return 1;
+        //     }
+        //     break;
+        case 'a':
+            xy = atoi(optarg);
             break;
         default:
             cerr << "Unknown option: " << char(opt) << endl;
@@ -588,7 +594,7 @@ int main(int argc, char *argv[])
     {
         cout << "=== Starting single test ===" << endl;
         uint64_t test_x = part_per_stripe;
-        uint64_t test_y = 64 / test_x;
+        uint64_t test_y = xy / test_x;
         run(k, m, block_size, outfile, verbose, stripes_count, test_x, test_y, temp_dir);
     }
     else
