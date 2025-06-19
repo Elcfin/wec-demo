@@ -1,24 +1,89 @@
 #!/bin/bash
 
 # Global parameters for the experiment
-# k=64
-# m=4
-# b=32
-# s=16
-# f=/dev/shm
 k=128
 m=4
 b=64
 s=16
 f=/home/elcfin/shm
 
-# Create results directory (moved up to include init log)
+# Create results directory (include timestamp in name)
 RESULTS_DIR="results_$(date +%Y%m%d_%H%M%S)"
 mkdir -p "$RESULTS_DIR" || { echo "Failed to create results directory"; exit 1; }
 echo "All results will be saved to: $RESULTS_DIR"
 
-# Execute initialization command (Required before running main tests)
-# This command prepares the test environment using file_demo utility
+# Collect comprehensive CPU information
+CPU_INFO="$RESULTS_DIR/cpu_info.txt"
+echo "=== CPU Information ===" > "$CPU_INFO"
+
+# Basic CPU info
+echo "CPU Model:" >> "$CPU_INFO"
+cat /proc/cpuinfo | grep "model name" | head -1 | awk -F': ' '{print $2}' >> "$CPU_INFO"
+echo "Architecture:" >> "$CPU_INFO"
+uname -m >> "$CPU_INFO"
+echo "CPU Family:" >> "$CPU_INFO"
+cat /proc/cpuinfo | grep "cpu family" | head -1 | awk -F': ' '{print $2}' >> "$CPU_INFO"
+echo "Model:" >> "$CPU_INFO"
+cat /proc/cpuinfo | grep "model" | head -1 | awk -F': ' '{print $2}' >> "$CPU_INFO"
+echo "Stepping:" >> "$CPU_INFO"
+cat /proc/cpuinfo | grep "stepping" | head -1 | awk -F': ' '{print $2}' >> "$CPU_INFO"
+
+# CPU core counts
+echo "Physical Cores:" >> "$CPU_INFO"
+lscpu | grep "Core(s) per socket" | awk -F':\t' '{print $2}' >> "$CPU_INFO"
+echo "Threads per Core:" >> "$CPU_INFO"
+lscpu | grep "Thread(s) per core" | awk -F':\t' '{print $2}' >> "$CPU_INFO"
+echo "Total Logical Cores:" >> "$CPU_INFO"
+cat /proc/cpuinfo | grep "processor" | wc -l >> "$CPU_INFO"
+
+# CPU frequency
+echo "CPU Frequency (min):" >> "$CPU_INFO"
+lscpu | grep "CPU min MHz" | awk -F':\t' '{print $2 " MHz"}' >> "$CPU_INFO"
+echo "CPU Frequency (max):" >> "$CPU_INFO"
+lscpu | grep "CPU max MHz" | awk -F':\t' '{print $2 " MHz"}' >> "$CPU_INFO"
+echo "CPU Boost Status:" >> "$CPU_INFO"
+cat /sys/devices/system/cpu/cpufreq/boost 2>/dev/null | grep -q "1" && echo "Enabled" || echo "Disabled" >> "$CPU_INFO"
+
+# Cache information (all levels)
+echo "L1 Data Cache:" >> "$CPU_INFO"
+lscpu | grep "L1d cache" | awk -F':\t' '{print $2}' >> "$CPU_INFO"
+echo "L1 Instruction Cache:" >> "$CPU_INFO"
+lscpu | grep "L1i cache" | awk -F':\t' '{print $2}' >> "$CPU_INFO"
+echo "L2 Cache:" >> "$CPU_INFO"
+lscpu | grep "L2 cache" | awk -F':\t' '{print $2}' >> "$CPU_INFO"
+echo "L3 Cache:" >> "$CPU_INFO"
+lscpu | grep "L3 cache" | awk -F':\t' '{print $2}' >> "$CPU_INFO"
+
+# Additional performance features
+echo "Hyper-threading:" >> "$CPU_INFO"
+cat /proc/cpuinfo | grep "siblings" | head -1 | awk -F': ' '{print $2 " cores (HT enabled if > physical cores)"}' >> "$CPU_INFO"
+echo "Virtualization Support:" >> "$CPU_INFO"
+cat /proc/cpuinfo | grep -q "vmx\|svm" && echo "Enabled (VT-x/AMD-V)" || echo "Disabled" >> "$CPU_INFO"
+echo "AVX2 Support:" >> "$CPU_INFO"
+cat /proc/cpuinfo | grep -q "avx2" && echo "Yes" || echo "No" >> "$CPU_INFO"
+echo "AVX-512 Support:" >> "$CPU_INFO"
+cat /proc/cpuinfo | grep -q "avx512" && echo "Yes" || echo "No" >> "$CPU_INFO"
+
+# Thermal and power management
+echo "Thermal Design Power (TDP):" >> "$CPU_INFO"
+cat /sys/class/hwmon/hwmon*/power1_max 2>/dev/null | head -1 | awk '{print $1/1000000 " W"}' >> "$CPU_INFO" || echo "N/A" >> "$CPU_INFO"
+echo "CPU Temperature:" >> "$CPU_INFO"
+cat /sys/class/hwmon/hwmon*/temp1_input 2>/dev/null | head -1 | awk '{print $1/1000 " °C"}' >> "$CPU_INFO" || echo "N/A (requires lm-sensors)" >> "$CPU_INFO"
+
+# Display CPU information
+echo -e "\n=== System CPU Information ==="
+cat "$CPU_INFO"
+
+# Define dstat output file
+DSTAT_LOG="$RESULTS_DIR/dstat_system_monitor.csv"
+
+# Start dstat monitoring in the background (capture CPU, disk, memory every second)
+echo "Starting system monitoring with dstat..."
+dstat -t -cdm -1 --output "$DSTAT_LOG" >/dev/null 2>&1 &
+DSTAT_PID=$!
+echo "Dstat monitoring started with PID: $DSTAT_PID"
+
+# Execute initialization command
 echo -e "[$(date '+%H:%M:%S')] Executing initialization command: ./file_demo -f $f -k $k -b $b -s 2"
 INIT_LOG="$RESULTS_DIR/init_$(date +%H%M%S).log"
 ./file_demo -f $f -k $k -b $b -s 2 > "$INIT_LOG" 2>&1
@@ -26,6 +91,8 @@ INIT_LOG="$RESULTS_DIR/init_$(date +%H%M%S).log"
 if [ $? -ne 0 ]; then
     echo -e "\n[$(date '+%H:%M:%S')] Error: Initialization command failed" >&2
     echo "Check log: $INIT_LOG" >&2
+    # Stop dstat monitoring
+    kill -9 $DSTAT_PID
     exit 1
 else
     echo -e "\n[$(date '+%H:%M:%S')] Initialization completed successfully"
@@ -78,6 +145,8 @@ MERGED_FILE="$RESULTS_DIR/${OUTPUT_BASE}_merged.csv"
 FIRST_CSV=$(find "$RESULTS_DIR" -name "*.csv" -type f | sort | head -n 1)
 if [ -z "$FIRST_CSV" ]; then
     echo "No CSV files found to merge."
+    # Stop dstat monitoring
+    kill -9 $DSTAT_PID
     exit 1
 fi
 
@@ -96,3 +165,15 @@ done
 
 echo -e "\nCSV files merged into: $MERGED_FILE"
 echo "Total rows in merged file: $(($(wc -l < "$MERGED_FILE") - 1))"
+
+# Stop dstat monitoring
+echo -e "\nStopping system monitoring..."
+kill -9 $DSTAT_PID
+echo "System monitoring results saved to: $DSTAT_LOG"
+
+# Final summary
+echo -e "\n=== Experiment Completed ==="
+echo "Results saved to: $RESULTS_DIR"
+echo "CPU information: $CPU_INFO"
+echo "System performance data: $DSTAT_LOG"
+echo "Merged CSV results: $MERGED_FILE"
