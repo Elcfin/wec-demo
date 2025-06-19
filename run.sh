@@ -7,6 +7,16 @@ b=32
 s=16
 f=/home/elcfin/shm
 
+# Check if temporary directory exists, create it if not
+if [ ! -d "$f" ]; then
+    echo "Creating temporary directory: $f"
+    mkdir -p "$f"
+    if [ $? -ne 0 ]; then
+        echo "Error: Failed to create temporary directory $f"
+        exit 1
+    fi
+fi
+
 # Create results directory (include timestamp in name)
 RESULTS_DIR="results_$(date +%Y%m%d_%H%M%S)"
 mkdir -p "$RESULTS_DIR" || { echo "Failed to create results directory"; exit 1; }
