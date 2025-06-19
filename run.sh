@@ -3,9 +3,10 @@
 # Global parameters for the experiment
 k=128
 m=4
-b=8
-s=8
+b=32
+s=16
 f=/home/elcfin/shm
+xy = 128
 
 # Check if temporary directory exists, create it if not
 if [ ! -d "$f" ]; then
@@ -125,14 +126,14 @@ check_status() {
 
 # Iterate through x values and execute commands
 for x in "${x_values[@]}"; do
-    echo -e "\n[$(date '+%H:%M:%S')] Starting execution: $EXECUTABLE -v -f $f -k $k -b $b -s $s -o "${RESULTS_DIR}/${OUTPUT_BASE}_x$x.csv" -x $x"
+    echo -e "\n[$(date '+%H:%M:%S')] Starting execution: $EXECUTABLE -v -f $f -k $k -b $b -s $s -o "${RESULTS_DIR}/${OUTPUT_BASE}_x$x.csv" -x $x -a $xy"
     
     # Execute command and capture output
     LOG_FILE="$RESULTS_DIR/log_${OUTPUT_BASE}_x${x}.txt"
     start_time=$(date +%s.%N)
     
     # Redirect stdout and stderr to log file
-    $EXECUTABLE -v -f $f -k $k -b $b -s $s -o "${RESULTS_DIR}/${OUTPUT_BASE}_x$x.csv" -x $x > "$LOG_FILE" 2>&1
+    $EXECUTABLE -v -f $f -k $k -b $b -s $s -o "${RESULTS_DIR}/${OUTPUT_BASE}_x$x.csv" -x $x  -a $xy > "$LOG_FILE" 2>&1
     check_status "Execution for x=$x failed" || continue
     
     end_time=$(date +%s.%N)
