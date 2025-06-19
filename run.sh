@@ -1,14 +1,35 @@
 #!/bin/bash
 
-# Define constants and parameter sets
-EXECUTABLE="./part_chunk_demo"
-OUTPUT_BASE="k64_m4_b32_s16"
-x_values=(4 6 8 10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 52 54 56 58 60 62 64)
+# Global parameters for the experiment
+k=64
+m=4
+b=32
+s=16
 
-# Create results directory to avoid cluttering current directory
+# Create results directory (moved up to include init log)
 RESULTS_DIR="results_$(date +%Y%m%d_%H%M%S)"
 mkdir -p "$RESULTS_DIR" || { echo "Failed to create results directory"; exit 1; }
-echo "Results will be saved to: $RESULTS_DIR"
+echo "All results will be saved to: $RESULTS_DIR"
+
+# Execute initialization command (Required before running main tests)
+# This command prepares the test environment using file_demo utility
+echo -e "[$(date '+%H:%M:%S')] Executing initialization command: ./file_demo -f /dev/shm -k $k -b $b -s 2"
+INIT_LOG="$RESULTS_DIR/init_$(date +%H%M%S).log"
+./file_demo -f /dev/shm -k $k -b $b -s 2 > "$INIT_LOG" 2>&1
+
+if [ $? -ne 0 ]; then
+    echo -e "\n[$(date '+%H:%M:%S')] Error: Initialization command failed" >&2
+    echo "Check log: $INIT_LOG" >&2
+    exit 1
+else
+    echo -e "\n[$(date '+%H:%M:%S')] Initialization completed successfully"
+    echo "Initialization log: $INIT_LOG"
+fi
+
+# Define constants and parameter sets
+EXECUTABLE="./part_chunk_demo"
+OUTPUT_BASE="k${k}_m${m}_b${b}_s${s}"
+x_values=(4 6 8 10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 52 54 56 58 60 62 64)
 
 # Function to check if command executed successfully
 check_status() {
@@ -28,7 +49,7 @@ for x in "${x_values[@]}"; do
     start_time=$(date +%s.%N)
     
     # Redirect stdout and stderr to log file
-    $EXECUTABLE -v -o "${RESULTS_DIR}/${OUTPUT_BASE}_x$x.csv" -x $x > "$LOG_FILE" 2>&1
+    $EXECUTABLE -v -k $k -b $b -s $s -o "${RESULTS_DIR}/${OUTPUT_BASE}_x$x.csv" -x $x > "$LOG_FILE" 2>&1
     check_status "Execution for x=$x failed" || continue
     
     end_time=$(date +%s.%N)
@@ -43,7 +64,7 @@ done
 echo -e "\n=== Execution Summary ==="
 grep "Encoding throughput" "$RESULTS_DIR"/*.txt | sort -k2 -n || echo "No throughput data found"
 
-# Merge all CSV files (added functionality)
+# Merge all CSV files
 echo -e "\n=== Merging CSV Files ==="
 MERGED_FILE="$RESULTS_DIR/${OUTPUT_BASE}_merged.csv"
 

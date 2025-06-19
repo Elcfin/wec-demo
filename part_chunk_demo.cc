@@ -462,6 +462,7 @@ int main(int argc, char *argv[])
     uint64_t stripes_count = 16;
     uint64_t part_per_stripe = 32; // x
     uint64_t parallel_count = 2;   // y
+    
 
     bool batch = false;
 
