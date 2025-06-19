@@ -112,7 +112,7 @@ fi
 
 # Define constants and parameter sets
 EXECUTABLE="./part_chunk_demo"
-OUTPUT_BASE="k${k}_m${m}_b${b}_s${s}"
+OUTPUT_BASE="k${k}_m${m}_b${b}_s${s}_xy${xy}"
 x_values=(4 6 8 10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 52 54 56 58 60 62 64)
 
 # Function to check if command executed successfully
