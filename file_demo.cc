@@ -129,9 +129,9 @@ void cleanup_temp_files(const vector<vector<string>> &filepaths)
 
 int main(int argc, char *argv[])
 {
-    uint64_t k = 128;
+    uint64_t k = 64;
     uint64_t m = 4;
-    uint64_t block_size = 64 * 1024 * 1024; // 64MB
+    uint64_t block_size = 32 * 1024 * 1024; // 32MB
     uint64_t stripes_count = 2;
     string temp_dir = "/dev/shm"; // "/home/elcfin/shm"
 
@@ -139,12 +139,12 @@ int main(int argc, char *argv[])
         {"help", no_argument, 0, 'h'},
         {"k", required_argument, 0, 'k'},
         {"block_size", required_argument, 0, 'b'},
-        {"temp_dir", required_argument, 0, 'o'},
+        {"temp_dir", required_argument, 0, 'f'},
         {"stripes", required_argument, 0, 's'},
         {0, 0, 0, 0}};
 
     int opt;
-    while ((opt = getopt_long(argc, argv, "hk:b:o:s:", long_options, nullptr)) != -1)
+    while ((opt = getopt_long(argc, argv, "hk:b:f:s:", long_options, nullptr)) != -1)
     {
         switch (opt)
         {
@@ -154,7 +154,7 @@ int main(int argc, char *argv[])
                  << "  -h, --help          Show this help message\n"
                  << "  -k, --k <num>       Number of data blocks (default: 128)\n"
                  << "  -b, --block_size <size>  Block size in MB (default: 64)\n"
-                 << "  -o, --temp_dir <dir> Temporary directory for data files (default: /dev/shm)\n"
+                 << "  -f, --temp_dir <dir> Temporary directory for data files (default: /dev/shm)\n"
                  << "  -s, --stripes <num> Number of stripes (default: 2)\n";
             return 0;
         case 'k':
@@ -168,7 +168,7 @@ int main(int argc, char *argv[])
         case 'b':
             block_size = atoi(optarg) * 1024 * 1024; // 转换为字节
             break;
-        case 'o':
+        case 'f':
             temp_dir = optarg;
             break;
         case 's':
