@@ -3,10 +3,10 @@
 # Global parameters for the experiment
 k=128
 m=4
-b=32
-s=16
+b=64
+s=8
 f=/home/elcfin/shm
-xy = 128
+xy=64
 
 # Check if temporary directory exists, create it if not
 if [ ! -d "$f" ]; then
