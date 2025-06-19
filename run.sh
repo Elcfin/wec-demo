@@ -1,10 +1,16 @@
 #!/bin/bash
 
 # Global parameters for the experiment
-k=64
+# k=64
+# m=4
+# b=32
+# s=16
+# f=/dev/shm
+k=128
 m=4
-b=32
+b=64
 s=16
+f=/home/elcfin/shm
 
 # Create results directory (moved up to include init log)
 RESULTS_DIR="results_$(date +%Y%m%d_%H%M%S)"
@@ -13,9 +19,9 @@ echo "All results will be saved to: $RESULTS_DIR"
 
 # Execute initialization command (Required before running main tests)
 # This command prepares the test environment using file_demo utility
-echo -e "[$(date '+%H:%M:%S')] Executing initialization command: ./file_demo -f /dev/shm -k $k -b $b -s 2"
+echo -e "[$(date '+%H:%M:%S')] Executing initialization command: ./file_demo -f $f -k $k -b $b -s 2"
 INIT_LOG="$RESULTS_DIR/init_$(date +%H%M%S).log"
-./file_demo -f /dev/shm -k $k -b $b -s 2 > "$INIT_LOG" 2>&1
+./file_demo -f $f -k $k -b $b -s 2 > "$INIT_LOG" 2>&1
 
 if [ $? -ne 0 ]; then
     echo -e "\n[$(date '+%H:%M:%S')] Error: Initialization command failed" >&2
@@ -49,7 +55,7 @@ for x in "${x_values[@]}"; do
     start_time=$(date +%s.%N)
     
     # Redirect stdout and stderr to log file
-    $EXECUTABLE -v -k $k -b $b -s $s -o "${RESULTS_DIR}/${OUTPUT_BASE}_x$x.csv" -x $x > "$LOG_FILE" 2>&1
+    $EXECUTABLE -v -f $f -k $k -b $b -s $s -o "${RESULTS_DIR}/${OUTPUT_BASE}_x$x.csv" -x $x > "$LOG_FILE" 2>&1
     check_status "Execution for x=$x failed" || continue
     
     end_time=$(date +%s.%N)

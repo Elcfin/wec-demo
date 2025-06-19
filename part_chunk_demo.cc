@@ -282,7 +282,7 @@ void run_stripe_thread(
     }
 }
 
-void run(uint64_t k, uint64_t m, uint64_t block_size, ofstream &outfile, bool verbose, uint64_t stripes_count, uint64_t x, uint64_t y)
+void run(uint64_t k, uint64_t m, uint64_t block_size, ofstream &outfile, bool verbose, uint64_t stripes_count, uint64_t x, uint64_t y, string temp_dir)
 {
     const uint64_t encoding_memory_footprint = k * block_size;
     const uint64_t parity_memory_footprint = m * block_size;
@@ -309,7 +309,7 @@ void run(uint64_t k, uint64_t m, uint64_t block_size, ofstream &outfile, bool ve
     if (verbose)
         cout << "Initializing temporary data files..." << endl;
     // 使用 /dev/shm 作为临时目录
-    string temp_dir = "/dev/shm";
+    // string temp_dir = "/dev/shm";
     // string temp_dir = "/home/elcfin/shm";
     // vector<uint8_t> pattern_buffer(block_size);
     for (int stripe = 0; stripe < stripes_count; stripe++)
@@ -462,7 +462,7 @@ int main(int argc, char *argv[])
     uint64_t stripes_count = 16;
     uint64_t part_per_stripe = 32; // x
     uint64_t parallel_count = 2;   // y
-    
+    string temp_dir = "/dev/shm";  // /home/elcfin/shm
 
     bool batch = false;
 
@@ -473,13 +473,14 @@ int main(int argc, char *argv[])
         {"batch", no_argument, 0, 't'},
         {"output", required_argument, 0, 'o'},
         {"verbose", no_argument, 0, 'v'},
+        {"temp_dir", required_argument, 0, 'f'},
         {"stripes", required_argument, 0, 's'},
         {"part_per_stripe", required_argument, 0, 'x'},
         {"parallel_count", required_argument, 0, 'y'},
         {0, 0, 0, 0}};
 
     int opt;
-    while ((opt = getopt_long(argc, argv, "hk:b:to:vs:x:y:", long_options, nullptr)) != -1)
+    while ((opt = getopt_long(argc, argv, "hk:b:to:vf:s:x:y:", long_options, nullptr)) != -1)
     {
         switch (opt)
         {
@@ -492,6 +493,7 @@ int main(int argc, char *argv[])
                  << "  -t, --batch           Batch test\n"
                  << "  -o, --output          Output results to a file\n"
                  << "  -v, --verbose         Enable verbose output\n"
+                 << "  -f, --temp_dir <dir> Temporary directory for data files (default: /dev/shm)\n"
                  << "  -s, --stripes N       Set number of stripes (default: 10)\n"
                  << "  -x, --part_per_stripe N Set number of parts per stripe (default: 32)\n"
                  << "  -y, --parallel_count N Set parallel count (default: 2)\n";
@@ -515,6 +517,9 @@ int main(int argc, char *argv[])
             break;
         case 'v':
             verbose = true;
+            break;
+        case 'f':
+            temp_dir = optarg;
             break;
         case 's':
             stripes_count = atoi(optarg);
@@ -584,7 +589,7 @@ int main(int argc, char *argv[])
         cout << "=== Starting single test ===" << endl;
         uint64_t test_x = part_per_stripe;
         uint64_t test_y = 64 / test_x;
-        run(k, m, block_size, outfile, verbose, stripes_count, test_x, test_y);
+        run(k, m, block_size, outfile, verbose, stripes_count, test_x, test_y, temp_dir);
     }
     else
     {
@@ -598,7 +603,7 @@ int main(int argc, char *argv[])
             while (cnt--)
             {
                 cout << "\n=== Turn cnt=" << cnt << " ===" << endl;
-                run(k, m, block_size, outfile, verbose, stripes_count, test_x, test_y);
+                run(k, m, block_size, outfile, verbose, stripes_count, test_x, test_y, temp_dir);
             }
         }
     }
