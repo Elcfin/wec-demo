@@ -125,7 +125,7 @@ check_status() {
 
 # Iterate through x values and execute commands
 for x in "${x_values[@]}"; do
-    echo -e "\n[$(date '+%H:%M:%S')] Starting execution: $EXECUTABLE -v -o ${OUTPUT_BASE}_x$x -x $x"
+    echo -e "\n[$(date '+%H:%M:%S')] Starting execution: $EXECUTABLE -v -f $f -k $k -b $b -s $s -o "${RESULTS_DIR}/${OUTPUT_BASE}_x$x.csv" -x $x"
     
     # Execute command and capture output
     LOG_FILE="$RESULTS_DIR/log_${OUTPUT_BASE}_x${x}.txt"
