@@ -1,0 +1,58 @@
+Verbose mode enabled.
+Output will be saved to: results_20250619_163858/k128_m4_b32_s16_x38.csv
+Output file opened successfully.
+=== Starting single test ===
+Initializing temporary data files...
+Temporary data files initialized.
+Thread 140019316553408 processing stripe 1
+  Processing batch 1/4 (blocks 0 to 37)
+  Processing batch 2/4 (blocks 38 to 75)
+  Processing batch 3/4 (blocks 76 to 113)
+  Processing batch 4/4 (blocks 114 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 0.778 seconds
+  I/O overhead: 0.755 seconds
+    - Read time: 0.747 seconds
+    - Network send time (simulated): 0.008 seconds
+  Total time: 3.003 seconds
+  Other overhead: 1.47 seconds
+Thread 140019316553408 processing stripe 2
+  Processing batch 1/4 (blocks 0 to 37)
+  Processing batch 2/4 (blocks 38 to 75)
+  Processing batch 3/4 (blocks 76 to 113)
+  Processing batch 4/4 (blocks 114 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 1.071 seconds
+  I/O overhead: 0.726 seconds
+    - Read time: 0.716 seconds
+    - Network send time (simulated): 0.01 seconds
+  Total time: 3.241 seconds
+  Other overhead: 1.444 seconds
+Thread 140019316553408 processing stripe 3
+  Processing batch 1/4 (blocks 0 to 37)
+  Processing batch 2/4 (blocks 38 to 75)
+  Processing batch 3/4 (blocks 76 to 113)
+  Processing batch 4/4 (blocks 114 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 1.09 seconds
+  I/O overhead: 0.756 seconds
+    - Read time: 0.75 seconds
+    - Network send time (simulated): 0.006 seconds
+  Total time: 3.252 seconds
+  Other overhead: 1.406 seconds
+Thread 140019316553408 processing stripe 4
+  Processing batch 1/4 (blocks 0 to 37)
+  Processing batch 2/4 (blocks 38 to 75)
+  Processing batch 3/4 (blocks 76 to 113)
+  Processing batch 4/4 (blocks 114 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 1.058 seconds
+  I/O overhead: 0.77 seconds
+    - Read time: 0.763 seconds
+    - Network send time (simulated): 0.007 seconds
+  Total time: 3.236 seconds
+  Other overhead: 1.408 seconds
+Thread 140019316553408 processing stripe 5
+  Processing batch 1/4 (blocks 0 to 37)
+  Processing batch 2/4 (blocks 38 to 75)
+  Processing batch 3/4 (blocks 76 to 113)

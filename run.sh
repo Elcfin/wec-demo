@@ -3,7 +3,7 @@
 # Global parameters for the experiment
 k=128
 m=4
-b=64
+b=32
 s=16
 f=/home/elcfin/shm
 
