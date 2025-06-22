@@ -107,7 +107,7 @@ bool write_block_to_file(const string &filepath, const uint8_t *buffer, uint64_t
     return true;
 }
 
-void run_stripe(uint64_t x, uint64_t k, uint64_t m, uint64_t block_size, uint64_t stripe_idx, vector<string> &data_block_filepaths, bool verbose, uint8_t *gftbl, ThreadSafeMetrics &metrics)
+void run_stripe(uint64_t x, uint64_t k, uint64_t m, uint64_t block_size, uint64_t stripe_idx, vector<string> &data_block_filepaths, bool verbose, bool chunking, uint64_t chunk_size, uint8_t *gftbl, ThreadSafeMetrics &metrics)
 {
     // 为当前批次创建复用缓冲区和指针 - 使用aligned_alloc确保16字节对齐
     vector<uint8_t *> data_buffers(x);
@@ -198,11 +198,40 @@ void run_stripe(uint64_t x, uint64_t k, uint64_t m, uint64_t block_size, uint64_
         }
 
         uint8_t *batch_gftbl = gftbl + start_idx * m * 16;
-        auto compute_start = high_resolution_clock::now();
-        ec_encode_data_sse(block_size, current_batch_size, m, batch_gftbl,
-                           data_ptrs.data(), local_parity_ptrs.data());
-        auto compute_end = high_resolution_clock::now();
-        metrics.compute_time += duration_cast<milliseconds>(compute_end - compute_start).count() / 1000.0;
+        if (chunking && chunk_size < block_size)
+        {
+            uint64_t num_chunks = (block_size + chunk_size - 1) / chunk_size;
+            for (uint64_t chunk_idx = 0; chunk_idx < num_chunks; chunk_idx++)
+            {
+                uint64_t current_chunk_size = min(chunk_size, block_size - chunk_idx * chunk_size);
+                uint64_t chunk_offset = chunk_idx * chunk_size;
+                vector<uint8_t *> chunk_data_ptrs(current_batch_size);
+                vector<uint8_t *> chunk_parity_ptrs(m);
+
+                for (uint64_t i = 0; i < current_batch_size; i++)
+                {
+                    chunk_data_ptrs[i] = data_ptrs[i] + chunk_offset;
+                }
+
+                for (uint64_t i = 0; i < m; i++)
+                {
+                    chunk_parity_ptrs[i] = local_parity_ptrs[i] + chunk_offset;
+                }
+                auto compute_start = high_resolution_clock::now();
+                ec_encode_data_sse(current_chunk_size, current_batch_size, m, batch_gftbl,
+                                   chunk_data_ptrs.data(), chunk_parity_ptrs.data());
+                auto compute_end = high_resolution_clock::now();
+                metrics.compute_time += duration_cast<milliseconds>(compute_end - compute_start).count() / 1000.0;
+            }
+        }
+        else
+        {
+            auto compute_start = high_resolution_clock::now();
+            ec_encode_data_sse(block_size, current_batch_size, m, batch_gftbl,
+                               data_ptrs.data(), local_parity_ptrs.data());
+            auto compute_end = high_resolution_clock::now();
+            metrics.compute_time += duration_cast<milliseconds>(compute_end - compute_start).count() / 1000.0;
+        }
 
         for (uint64_t i = 0; i < m; i++)
         {
@@ -260,7 +289,7 @@ void run_stripe_thread(
     uint64_t x, uint64_t k, uint64_t m, uint64_t block_size,
     uint64_t start_stripe, uint64_t end_stripe,
     vector<vector<string>> data_block_filepaths,
-    bool verbose, uint8_t *gftbl,
+    bool verbose, bool chunking, uint64_t chunk_size, uint8_t *gftbl,
     ThreadSafeMetrics &global_metrics)
 {
     for (uint64_t stripe = start_stripe; stripe < end_stripe; ++stripe)
@@ -272,7 +301,7 @@ void run_stripe_thread(
         }
         ThreadSafeMetrics local_metrics;
         // 调用原 run_stripe（需调整返回值，或直接在这里统计时间）
-        run_stripe(x, k, m, block_size, stripe, data_block_filepaths[stripe], verbose, gftbl, local_metrics);
+        run_stripe(x, k, m, block_size, stripe, data_block_filepaths[stripe], verbose, chunking, chunk_size, gftbl, local_metrics);
         global_metrics.mtx.lock();
         global_metrics.read_time += local_metrics.read_time;
         global_metrics.write_time += local_metrics.write_time;
@@ -282,7 +311,7 @@ void run_stripe_thread(
     }
 }
 
-void run(uint64_t k, uint64_t m, uint64_t block_size, ofstream &outfile, bool verbose, uint64_t stripes_count, uint64_t x, uint64_t y, string temp_dir)
+void run(uint64_t k, uint64_t m, uint64_t block_size, ofstream &outfile, bool verbose, uint64_t stripes_count, uint64_t x, uint64_t y, string temp_dir, bool chunking, uint64_t chunk_size)
 {
     const uint64_t encoding_memory_footprint = k * block_size;
     const uint64_t parity_memory_footprint = m * block_size;
@@ -363,7 +392,7 @@ void run(uint64_t k, uint64_t m, uint64_t block_size, ofstream &outfile, bool ve
             x, k, m, block_size,
             start_stripe, end_stripe,
             data_block_filepaths,
-            verbose, gftbl.data(),
+            verbose, chunking, chunk_size, gftbl.data(),
             std::ref(thread_metrics[i]));
 
         start_stripe = end_stripe;
@@ -428,7 +457,7 @@ void run(uint64_t k, uint64_t m, uint64_t block_size, ofstream &outfile, bool ve
 
     if (outfile.is_open())
     {
-        outfile << "RS," << k << "," << m << "," << x << "," << y << "," << (block_size / (1024.0 * 1024.0)) << "," << (total_data_size / (1024.0 * 1024.0)) << ","
+        outfile << "RS," << k << "," << m << "," << x << "," << y << "," << (block_size / (1024.0 * 1024.0)) << "," << (chunk_size / (1024.0))  <<","<< (total_data_size / (1024.0 * 1024.0)) << ","
                 << metrics.encoding_time << "," << encode_throughput << ","
                 << metrics.compute_time << "," << metrics.total_io_time() << ","
                 << metrics.read_time << "," << metrics.write_time << ","
@@ -463,9 +492,9 @@ int main(int argc, char *argv[])
     uint64_t part_per_stripe = 32; // x
     uint64_t xy = 64;
     // uint64_t parallel_count = 2;   // y
-    string temp_dir = "/dev/shm";  // /home/elcfin/shm
-
-    bool batch = false;
+    string temp_dir = "/dev/shm"; // /home/elcfin/shm
+    bool chunking = false;
+    uint64_t chunk_size = 64 * 1024; // 64KB
 
     static struct option long_options[] = {
         {"help", no_argument, 0, 'h'},
@@ -479,10 +508,12 @@ int main(int argc, char *argv[])
         {"part_per_stripe", required_argument, 0, 'x'},
         // {"parallel_count", required_argument, 0, 'y'},
         {"xy", required_argument, 0, 'a'},
+        {"chunking", no_argument, 0, 'c'},
+        {"chunk_size", required_argument, 0, 'z'},
         {0, 0, 0, 0}};
 
     int opt;
-    while ((opt = getopt_long(argc, argv, "hk:b:to:vf:s:x:a:", long_options, nullptr)) != -1)
+    while ((opt = getopt_long(argc, argv, "hk:b:o:vf:s:x:a:cz:", long_options, nullptr)) != -1)
     {
         switch (opt)
         {
@@ -492,14 +523,15 @@ int main(int argc, char *argv[])
                  << "  -h, --help            Display this help message\n"
                  << "  -k, --k N             Set number of data blocks (default: 64)\n"
                  << "  -b, --block_size N    Set block size in bytes (default: 64MB)\n"
-                 << "  -t, --batch           Batch test\n"
                  << "  -o, --output          Output results to a file\n"
                  << "  -v, --verbose         Enable verbose output\n"
                  << "  -f, --temp_dir <dir> Temporary directory for data files (default: /dev/shm)\n"
                  << "  -s, --stripes N       Set number of stripes (default: 10)\n"
                  << "  -x, --part_per_stripe N Set number of parts per stripe (default: 32)\n"
-                 << "  -a, --xy N            Set x and y (default: 64)\n";
-                //  << "  -y, --parallel_count N Set parallel count (default: 2)\n";
+                 << "  -a, --xy N            Set x and y (default: 64)\n"
+                 //  << "  -y, --parallel_count N Set parallel count (default: 2)\n";
+                 << "  -c, --chunking        Enable chunking mode\n"
+                 << "  -z, --chunk_size N    Set chunk size in bytes (default: 64KB)\n";
             return 0;
         case 'k':
             k = atoi(optarg);
@@ -511,9 +543,6 @@ int main(int argc, char *argv[])
             break;
         case 'b':
             block_size = atoi(optarg) * 1024 * 1024; // 转换为字节
-            break;
-        case 't':
-            batch = true;
             break;
         case 'o':
             output_file = optarg;
@@ -551,6 +580,16 @@ int main(int argc, char *argv[])
         case 'a':
             xy = atoi(optarg);
             break;
+        case 'c':
+            chunking = true;
+            if (verbose)
+            {
+                cout << "Chunking mode enabled." << endl;
+            }
+            break;
+        case 'z':
+            chunk_size = atoi(optarg) * 1024; // 转换为字节
+            break;
         default:
             cerr << "Unknown option: " << char(opt) << endl;
             return 1;
@@ -580,7 +619,7 @@ int main(int argc, char *argv[])
         outfile.open(output_file);
         if (outfile.is_open())
         {
-            outfile << "code_type,k,m,x,y,block_size,total_data_size,encode_time,encode_throughput,"
+            outfile << "code_type,k,m,x,y,block_size,chunk_size(KB),total_data_size,encode_time,encode_throughput,"
                     << "compute_time,io_time,read_time,simulated_send_time,other_time\n";
             cout << "Output file opened successfully." << endl;
         }
@@ -590,29 +629,11 @@ int main(int argc, char *argv[])
             return 1;
         }
     }
-    if (!batch)
-    {
-        cout << "=== Starting single test ===" << endl;
-        uint64_t test_x = part_per_stripe;
-        uint64_t test_y = xy / test_x;
-        run(k, m, block_size, outfile, verbose, stripes_count, test_x, test_y, temp_dir);
-    }
-    else
-    {
-        cout << "=== Starting batch test ===" << endl;
-        vector<uint64_t> test_xs = {4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64};
-        for (uint64_t test_x : test_xs)
-        {
-            cout << "\n=== Testing x=" << test_x << " ===" << endl;
-            uint64_t test_y = 64 / test_x;
-            int cnt = 5; // 每个测试运行5次
-            while (cnt--)
-            {
-                cout << "\n=== Turn cnt=" << cnt << " ===" << endl;
-                run(k, m, block_size, outfile, verbose, stripes_count, test_x, test_y, temp_dir);
-            }
-        }
-    }
+
+    cout << "=== Starting single test ===" << endl;
+    uint64_t test_x = part_per_stripe;
+    uint64_t test_y = xy / test_x;
+    run(k, m, block_size, outfile, verbose, stripes_count, test_x, test_y, temp_dir, chunking, chunk_size);
 
     if (outfile.is_open())
     {

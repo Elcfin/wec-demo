@@ -1,0 +1,529 @@
+Chunking mode enabled.
+Verbose mode enabled.
+Output will be saved to: results_20250622_183812/k128_m4_b16_s32_xy256_chunk1024_x16.csv
+Output file opened successfully.
+=== Starting single test ===
+Initializing temporary data files...
+Temporary data files initialized.
+Thread 135787098142400 processing stripe 1
+  Processing batch 1/8 (blocks 0 to 15)
+Thread 135786615703232 processing stripe 3
+  Processing batch 1/8 (blocks 0 to 15)
+Thread 135786129159872 processing stripe 5
+  Processing batch 1/8 (blocks 0 to 15)
+Thread 135785642632896 processing stripe 7
+  Processing batch 1/8 (blocks 0 to 15)
+Thread 135785156089536 processing stripe 9
+  Processing batch 1/8 (blocks 0 to 15)
+Thread 135784669546176 processing stripe 11
+  Processing batch 1/8 (blocks 0 to 15)
+Thread 135784183002816 processing stripe 13
+Thread 135784174610112 processing stripe 15
+  Processing batch 1/8 (blocks 0 to 15)
+  Processing batch 1/8 (blocks 0 to 15)
+Thread 135784132654784 processing stripe 17
+  Processing batch 1/8 (blocks 0 to 15)
+Thread 135783998539456 processing stripe 19
+  Processing batch 1/8 (blocks 0 to 15)
+Thread 135783193069248 processing stripe 21
+  Processing batch 1/8 (blocks 0 to 15)
+Thread 135782656263872 processing stripe 23
+  Processing batch 1/8 (blocks 0 to 15)
+Thread 135782186518208 processing stripe 25
+  Processing batch 1/8 (blocks 0 to 15)
+Thread 135781716756160 processing stripe 27
+  Processing batch 1/8 (blocks 0 to 15)
+Thread 135781246994112 processing stripe 29
+  Processing batch 1/8 (blocks 0 to 15)
+Thread 135780710106816 processing stripe 31
+  Processing batch 1/8 (blocks 0 to 15)
+  Processing batch 2/8 (blocks 16 to 31)
+  Processing batch 2/8 (blocks 16 to 31)
+  Processing batch 2/8 (blocks 16 to 31)
+  Processing batch 2/8 (blocks 16 to 31)
+  Processing batch 2/8 (blocks 16 to 31)
+  Processing batch 2/8 (blocks 16 to 31)
+  Processing batch 2/8 (blocks 16 to 31)
+  Processing batch 2/8 (blocks 16 to 31)
+  Processing batch 2/8 (blocks 16 to 31)
+  Processing batch 2/8 (blocks 16 to 31)
+  Processing batch 2/8 (blocks 16 to 31)
+  Processing batch 2/8 (blocks 16 to 31)
+  Processing batch 2/8 (blocks 16 to 31)
+  Processing batch 2/8 (blocks 16 to 31)
+  Processing batch 2/8 (blocks 16 to 31)
+  Processing batch 2/8 (blocks 16 to 31)
+  Processing batch 3/8 (blocks 32 to 47)
+  Processing batch 3/8 (blocks 32 to 47)
+  Processing batch 3/8 (blocks 32 to 47)
+  Processing batch 3/8 (blocks 32 to 47)
+  Processing batch 3/8 (blocks 32 to 47)
+  Processing batch 3/8 (blocks 32 to 47)
+  Processing batch 3/8 (blocks 32 to 47)
+  Processing batch 3/8 (blocks 32 to 47)
+  Processing batch 3/8 (blocks 32 to 47)
+  Processing batch 3/8 (blocks 32 to 47)
+  Processing batch 3/8 (blocks 32 to 47)
+  Processing batch 3/8 (blocks 32 to 47)
+  Processing batch 3/8 (blocks 32 to 47)
+  Processing batch 3/8 (blocks 32 to 47)
+  Processing batch 3/8 (blocks 32 to 47)
+  Processing batch 3/8 (blocks 32 to 47)
+  Processing batch 4/8 (blocks 48 to 63)
+  Processing batch 4/8 (blocks 48 to 63)
+  Processing batch 4/8 (blocks 48 to 63)
+  Processing batch 4/8 (blocks 48 to 63)
+  Processing batch 4/8 (blocks 48 to 63)
+  Processing batch 4/8 (blocks 48 to 63)
+  Processing batch 4/8 (blocks 48 to 63)
+  Processing batch 4/8 (blocks 48 to 63)
+  Processing batch 4/8 (blocks 48 to 63)
+  Processing batch 4/8 (blocks 48 to 63)
+  Processing batch 4/8 (blocks 48 to 63)
+  Processing batch 4/8 (blocks 48 to 63)
+  Processing batch 4/8 (blocks 48 to 63)
+  Processing batch 4/8 (blocks 48 to 63)
+  Processing batch 4/8 (blocks 48 to 63)
+  Processing batch 4/8 (blocks 48 to 63)
+  Processing batch 5/8 (blocks 64 to 79)
+  Processing batch 5/8 (blocks 64 to 79)
+  Processing batch 5/8 (blocks 64 to 79)
+  Processing batch 5/8 (blocks 64 to 79)
+  Processing batch 5/8 (blocks 64 to 79)
+  Processing batch 5/8 (blocks 64 to 79)
+  Processing batch 5/8 (blocks 64 to 79)
+  Processing batch 5/8 (blocks 64 to 79)
+  Processing batch 5/8 (blocks 64 to 79)
+  Processing batch 5/8 (blocks 64 to 79)
+  Processing batch 5/8 (blocks 64 to 79)
+  Processing batch 5/8 (blocks 64 to 79)
+  Processing batch 5/8 (blocks 64 to 79)
+  Processing batch 5/8 (blocks 64 to 79)
+  Processing batch 5/8 (blocks 64 to 79)
+  Processing batch 5/8 (blocks 64 to 79)
+  Processing batch 6/8 (blocks 80 to 95)
+  Processing batch 6/8 (blocks 80 to 95)
+  Processing batch 6/8 (blocks 80 to 95)
+  Processing batch 6/8 (blocks 80 to 95)
+  Processing batch 6/8 (blocks 80 to 95)
+  Processing batch 6/8 (blocks 80 to 95)
+  Processing batch 6/8 (blocks 80 to 95)
+  Processing batch 6/8 (blocks 80 to 95)
+  Processing batch 6/8 (blocks 80 to 95)
+  Processing batch 6/8 (blocks 80 to 95)
+  Processing batch 6/8 (blocks 80 to 95)
+  Processing batch 6/8 (blocks 80 to 95)
+  Processing batch 6/8 (blocks 80 to 95)
+  Processing batch 6/8 (blocks 80 to 95)
+  Processing batch 7/8 (blocks 96 to 111)
+  Processing batch 6/8 (blocks 80 to 95)
+  Processing batch 6/8 (blocks 80 to 95)
+  Processing batch 7/8 (blocks 96 to 111)
+  Processing batch 7/8 (blocks 96 to 111)
+  Processing batch 7/8 (blocks 96 to 111)
+  Processing batch 7/8 (blocks 96 to 111)
+  Processing batch 7/8 (blocks 96 to 111)
+  Processing batch 7/8 (blocks 96 to 111)
+  Processing batch 7/8 (blocks 96 to 111)
+  Processing batch 7/8 (blocks 96 to 111)
+  Processing batch 7/8 (blocks 96 to 111)
+  Processing batch 7/8 (blocks 96 to 111)
+  Processing batch 7/8 (blocks 96 to 111)
+  Processing batch 7/8 (blocks 96 to 111)
+  Processing batch 8/8 (blocks 112 to 127)
+  Processing batch 7/8 (blocks 96 to 111)
+  Processing batch 7/8 (blocks 96 to 111)
+  Processing batch 8/8 (blocks 112 to 127)
+  Processing batch 7/8 (blocks 96 to 111)
+  Processing batch 8/8 (blocks 112 to 127)
+  Processing batch 8/8 (blocks 112 to 127)
+  Processing batch 8/8 (blocks 112 to 127)
+  Processing batch 8/8 (blocks 112 to 127)
+  Processing batch 8/8 (blocks 112 to 127)
+  Processing batch 8/8 (blocks 112 to 127)
+  Processing batch 8/8 (blocks 112 to 127)
+  Processing batch 8/8 (blocks 112 to 127)
+  Processing batch 8/8 (blocks 112 to 127)
+  Processing batch 8/8 (blocks 112 to 127)
+  Processing batch 8/8 (blocks 112 to 127)
+  Processing batch 8/8 (blocks 112 to 127)
+  Processing batch 8/8 (blocks 112 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 1.567 seconds
+  I/O overhead: 1.556 seconds
+    - Read time: 1.523 seconds
+    - Network send time (simulated): 0.033 seconds
+  Total time: 5.863 seconds
+  Other overhead: 2.74 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 1.582 seconds
+  I/O overhead: 1.538 seconds
+    - Read time: 1.523 seconds
+    - Network send time (simulated): 0.015 seconds
+  Total time: 5.883 seconds
+  Other overhead: 2.763 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 1.576 seconds
+  I/O overhead: 1.515 seconds
+    - Read time: 1.499 seconds
+    - Network send time (simulated): 0.016 seconds
+  Total time: 5.89 seconds
+  Other overhead: 2.799 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 1.532 seconds
+  I/O overhead: 1.513 seconds
+    - Read time: 1.499 seconds
+    - Network send time (simulated): 0.014 seconds
+  Total time: 5.896 seconds
+  Other overhead: 2.851 seconds
+Thread 135782186518208 processing stripe 26
+=== Stripe Encoding Completed ===
+  Compute time: 1.692 seconds
+  I/O overhead: 1.419 seconds
+    - Read time: 1.407 seconds
+    - Network send time (simulated): 0.012 seconds
+  Total time: 5.903 seconds
+  Other overhead: 2.792 seconds
+  Processing batch 8/8 (blocks 112 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 1.535 seconds
+  I/O overhead: 1.505 seconds
+    - Read time: 1.491 seconds
+    - Network send time (simulated): 0.014 seconds
+  Total time: 5.902 seconds
+  Other overhead: 2.862 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 1.598 seconds
+  I/O overhead: 1.517 seconds
+    - Read time: 1.5 seconds
+    - Network send time (simulated): 0.017 seconds
+  Total time: 5.919 seconds
+  Other overhead: 2.804 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 1.587 seconds
+  I/O overhead: 1.536 seconds
+    - Read time: 1.519 seconds
+    - Network send time (simulated): 0.017 seconds
+  Total time: 5.924 seconds
+  Other overhead: 2.801 seconds
+Thread 135785642632896 processing stripe 8
+Thread 135781716756160 processing stripe 28
+Thread 135784132654784 processing stripe 18
+Thread 135786615703232 processing stripe 4
+Thread 135783998539456 processing stripe 20
+Thread 135780710106816 processing stripe 32
+Thread 135783193069248 processing stripe 22
+  Processing batch 1/8 (blocks 0 to 15)
+  Processing batch   Processing batch 1/8 (blocks 0 to 15)
+1/8 (blocks 0 to 15)
+  Processing batch 1/8 (blocks 0 to 15)
+  Processing batch 1/8 (blocks 0 to 15)
+  Processing batch 1/8 (blocks 0 to 15)
+  Processing batch 1/8 (blocks 0 to 15)
+  Processing batch 1/8 (blocks 0 to 15)
+=== Stripe Encoding Completed ===
+  Compute time: 1.805 seconds
+  I/O overhead: 1.437 seconds
+    - Read time: 1.392 seconds
+    - Network send time (simulated): 0.045 seconds
+  Total time: 6.077 seconds
+  Other overhead: 2.835 seconds
+Thread 135784183002816 processing stripe 14
+  Processing batch 1/8 (blocks 0 to 15)
+=== Stripe Encoding Completed ===
+  Compute time: 1.848 seconds
+  I/O overhead: 1.594 seconds
+    - Read time: 1.555 seconds
+    - Network send time (simulated): 0.039 seconds
+  Total time: 6.138 seconds
+  Other overhead: 2.696 seconds
+Thread 135781246994112 processing stripe 30
+  Processing batch 1/8 (blocks 0 to 15)
+=== Stripe Encoding Completed ===
+  Compute time: 1.856 seconds
+  I/O overhead: 1.476 seconds
+    - Read time: 1.453 seconds
+    - Network send time (simulated): 0.023 seconds
+  Total time: 6.185 seconds
+  Other overhead: 2.853 seconds
+Thread 135782656263872 processing stripe 24
+  Processing batch 1/8 (blocks 0 to 15)
+=== Stripe Encoding Completed ===
+  Compute time: 1.813 seconds
+  I/O overhead: 1.711 seconds
+    - Read time: 1.678 seconds
+    - Network send time (simulated): 0.033 seconds
+  Total time: 6.345 seconds
+  Other overhead: 2.821 seconds
+Thread 135785156089536 processing stripe 10
+  Processing batch 1/8 (blocks 0 to 15)
+=== Stripe Encoding Completed ===
+  Compute time: 1.841 seconds
+  I/O overhead: 1.865 seconds
+    - Read time: 1.815 seconds
+    - Network send time (simulated): 0.05 seconds
+  Total time: 6.457 seconds
+  Other overhead: 2.751 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 1.798 seconds
+  I/O overhead: 1.778 seconds
+    - Read time: 1.723 seconds
+    - Network send time (simulated): 0.055 seconds
+  Total time: 6.471 seconds
+  Other overhead: 2.895 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 1.854 seconds
+  I/O overhead: 1.726 seconds
+    - Read time: 1.672 seconds
+    - Network send time (simulated): 0.054 seconds
+  Total time: 6.477 seconds
+  Other overhead: 2.897 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 1.7 seconds
+  I/O overhead: 1.858 seconds
+    - Read time: 1.812 seconds
+    - Network send time (simulated): 0.046 seconds
+  Total time: 6.481 seconds
+  Other overhead: 2.923 seconds
+Thread 135784669546176 processing stripe 12
+Thread 135786129159872 processing stripe 6
+Thread 135784174610112 processing stripe 16
+Thread 135787098142400 processing stripe 2
+  Processing batch 1/8 (blocks 0 to 15)
+  Processing batch 1/8 (blocks 0 to 15)
+  Processing batch 1/8 (blocks 0 to 15)
+  Processing batch 1/8 (blocks 0 to 15)
+  Processing batch 2/8 (blocks 16 to 31)
+  Processing batch 2/8 (blocks 16 to 31)
+  Processing batch 2/8 (blocks 16 to 31)
+  Processing batch 2/8 (blocks 16 to 31)
+  Processing batch 2/8 (blocks 16 to 31)
+  Processing batch 2/8 (blocks 16 to 31)
+  Processing batch 2/8 (blocks 16 to 31)
+  Processing batch 2/8 (blocks 16 to 31)
+  Processing batch 2/8 (blocks 16 to 31)
+  Processing batch 2/8 (blocks 16 to 31)
+  Processing batch 2/8 (blocks 16 to 31)
+  Processing batch 2/8 (blocks 16 to 31)
+  Processing batch 2/8 (blocks 16 to 31)
+  Processing batch 2/8 (blocks 16 to 31)
+  Processing batch 2/8 (blocks 16 to 31)
+  Processing batch 2/8 (blocks 16 to 31)
+  Processing batch 3/8 (blocks 32 to 47)
+  Processing batch 3/8 (blocks 32 to 47)
+  Processing batch 3/8 (blocks 32 to 47)
+  Processing batch 3/8 (blocks 32 to 47)
+  Processing batch 3/8 (blocks 32 to 47)
+  Processing batch 3/8 (blocks 32 to 47)
+  Processing batch 3/8 (blocks 32 to 47)
+  Processing batch 3/8 (blocks 32 to 47)
+  Processing batch 3/8 (blocks 32 to 47)
+  Processing batch 3/8 (blocks 32 to 47)
+  Processing batch 3/8 (blocks 32 to 47)
+  Processing batch 3/8 (blocks 32 to 47)
+  Processing batch 3/8 (blocks 32 to 47)
+  Processing batch 3/8 (blocks 32 to 47)
+  Processing batch 3/8 (blocks 32 to 47)
+  Processing batch 3/8 (blocks 32 to 47)
+  Processing batch 4/8 (blocks 48 to 63)
+  Processing batch 4/8 (blocks 48 to 63)
+  Processing batch 4/8 (blocks 48 to 63)
+  Processing batch 4/8 (blocks 48 to 63)
+  Processing batch 4/8 (blocks 48 to 63)
+  Processing batch 4/8 (blocks 48 to 63)
+  Processing batch 4/8 (blocks 48 to 63)
+  Processing batch 4/8 (blocks 48 to 63)
+  Processing batch 4/8 (blocks 48 to 63)
+  Processing batch 4/8 (blocks 48 to 63)
+  Processing batch 4/8 (blocks 48 to 63)
+  Processing batch 4/8 (blocks 48 to 63)
+  Processing batch 4/8 (blocks 48 to 63)
+  Processing batch 4/8 (blocks 48 to 63)
+  Processing batch 4/8 (blocks 48 to 63)
+  Processing batch 4/8 (blocks 48 to 63)
+  Processing batch 5/8 (blocks 64 to 79)
+  Processing batch 5/8 (blocks 64 to 79)
+  Processing batch 5/8 (blocks 64 to 79)
+  Processing batch 5/8 (blocks 64 to 79)
+  Processing batch 5/8 (blocks 64 to 79)
+  Processing batch 5/8 (blocks 64 to 79)
+  Processing batch 5/8 (blocks 64 to 79)
+  Processing batch 5/8 (blocks 64 to 79)
+  Processing batch 5/8 (blocks 64 to 79)
+  Processing batch 5/8 (blocks 64 to 79)
+  Processing batch 5/8 (blocks 64 to 79)
+  Processing batch 5/8 (blocks 64 to 79)
+  Processing batch 5/8 (blocks 64 to 79)
+  Processing batch 5/8 (blocks 64 to 79)
+  Processing batch 5/8 (blocks 64 to 79)
+  Processing batch 5/8 (blocks 64 to 79)
+  Processing batch 6/8 (blocks 80 to 95)
+  Processing batch 6/8 (blocks 80 to 95)
+  Processing batch 6/8 (blocks 80 to 95)
+  Processing batch 6/8 (blocks 80 to 95)
+  Processing batch 6/8 (blocks 80 to 95)
+  Processing batch 6/8 (blocks 80 to 95)
+  Processing batch 6/8 (blocks 80 to 95)
+  Processing batch 6/8 (blocks 80 to 95)
+  Processing batch 6/8 (blocks 80 to 95)
+  Processing batch 6/8 (blocks 80 to 95)
+  Processing batch 6/8 (blocks 80 to 95)
+  Processing batch 6/8 (blocks 80 to 95)
+  Processing batch 6/8 (blocks 80 to 95)
+  Processing batch 6/8 (blocks 80 to 95)
+  Processing batch 6/8 (blocks 80 to 95)
+  Processing batch 6/8 (blocks 80 to 95)
+  Processing batch 7/8 (blocks 96 to 111)
+  Processing batch 7/8 (blocks 96 to 111)
+  Processing batch 7/8 (blocks 96 to 111)
+  Processing batch 7/8 (blocks 96 to 111)
+  Processing batch 7/8 (blocks 96 to 111)
+  Processing batch 7/8 (blocks 96 to 111)
+  Processing batch 7/8 (blocks 96 to 111)
+  Processing batch 7/8 (blocks 96 to 111)
+  Processing batch 7/8 (blocks 96 to 111)
+  Processing batch 7/8 (blocks 96 to 111)
+  Processing batch 7/8 (blocks 96 to 111)
+  Processing batch 7/8 (blocks 96 to 111)
+  Processing batch 7/8 (blocks 96 to 111)
+  Processing batch 7/8 (blocks 96 to 111)
+  Processing batch 7/8 (blocks 96 to 111)
+  Processing batch 7/8 (blocks 96 to 111)
+  Processing batch 8/8 (blocks 112 to 127)
+  Processing batch 8/8 (blocks 112 to 127)
+  Processing batch 8/8 (blocks 112 to 127)
+  Processing batch 8/8 (blocks 112 to 127)
+  Processing batch 8/8 (blocks 112 to 127)
+  Processing batch 8/8 (blocks 112 to 127)
+  Processing batch 8/8 (blocks 112 to 127)
+  Processing batch 8/8 (blocks 112 to 127)
+  Processing batch 8/8 (blocks 112 to 127)
+  Processing batch 8/8 (blocks 112 to 127)
+  Processing batch 8/8 (blocks 112 to 127)
+  Processing batch 8/8 (blocks 112 to 127)
+  Processing batch 8/8 (blocks 112 to 127)
+  Processing batch 8/8 (blocks 112 to 127)
+  Processing batch 8/8 (blocks 112 to 127)
+  Processing batch 8/8 (blocks 112 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 1.471 seconds
+  I/O overhead: 1.443 seconds
+    - Read time: 1.377 seconds
+    - Network send time (simulated): 0.066 seconds
+  Total time: 5.629 seconds
+  Other overhead: 2.715 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 1.264 seconds
+  I/O overhead: 1.573 seconds
+    - Read time: 1.515 seconds
+    - Network send time (simulated): 0.058 seconds
+  Total time: 5.628 seconds
+  Other overhead: 2.791 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 1.274 seconds
+  I/O overhead: 1.562 seconds
+    - Read time: 1.503 seconds
+    - Network send time (simulated): 0.059 seconds
+  Total time: 5.629 seconds
+  Other overhead: 2.793 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 1.338 seconds
+  I/O overhead: 1.457 seconds
+    - Read time: 1.422 seconds
+    - Network send time (simulated): 0.035 seconds
+  Total time: 5.64 seconds
+  Other overhead: 2.845 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 1.397 seconds
+  I/O overhead: 1.388 seconds
+    - Read time: 1.382 seconds
+    - Network send time (simulated): 0.006 seconds
+  Total time: 5.65 seconds
+  Other overhead: 2.865 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 1.483 seconds
+  I/O overhead: 1.392 seconds
+    - Read time: 1.381 seconds
+    - Network send time (simulated): 0.011 seconds
+  Total time: 5.592 seconds
+  Other overhead: 2.717 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 1.662 seconds
+  I/O overhead: 1.457 seconds
+    - Read time: 1.452 seconds
+    - Network send time (simulated): 0.005 seconds
+  Total time: 5.883 seconds
+  Other overhead: 2.764 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 1.57 seconds
+  I/O overhead: 1.621 seconds
+    - Read time: 1.613 seconds
+    - Network send time (simulated): 0.008 seconds
+  Total time: 5.912 seconds
+  Other overhead: 2.721 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 1.237 seconds
+  I/O overhead: 1.409 seconds
+    - Read time: 1.403 seconds
+    - Network send time (simulated): 0.006 seconds
+  Total time: 5.349 seconds
+  Other overhead: 2.703 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 1.34 seconds
+  I/O overhead: 1.769 seconds
+    - Read time: 1.765 seconds
+    - Network send time (simulated): 0.004 seconds
+  Total time: 5.865 seconds
+  Other overhead: 2.756 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 1.264 seconds
+  I/O overhead: 1.547 seconds
+    - Read time: 1.542 seconds
+    - Network send time (simulated): 0.005 seconds
+  Total time: 5.47 seconds
+  Other overhead: 2.659 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 1.373 seconds
+  I/O overhead: 1.719 seconds
+    - Read time: 1.713 seconds
+    - Network send time (simulated): 0.006 seconds
+  Total time: 5.847 seconds
+  Other overhead: 2.755 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 1.72 seconds
+  I/O overhead: 1.658 seconds
+    - Read time: 1.653 seconds
+    - Network send time (simulated): 0.005 seconds
+  Total time: 6.056 seconds
+  Other overhead: 2.678 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 1.275 seconds
+  I/O overhead: 1.646 seconds
+    - Read time: 1.641 seconds
+    - Network send time (simulated): 0.005 seconds
+  Total time: 5.695 seconds
+  Other overhead: 2.774 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 1.332 seconds
+  I/O overhead: 1.489 seconds
+    - Read time: 1.485 seconds
+    - Network send time (simulated): 0.004 seconds
+  Total time: 5.52 seconds
+  Other overhead: 2.699 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 1.245 seconds
+  I/O overhead: 1.52 seconds
+    - Read time: 1.515 seconds
+    - Network send time (simulated): 0.005 seconds
+  Total time: 5.523 seconds
+  Other overhead: 2.758 seconds
+
+=== In-Memory EC Encoding Completed ===
+Total encoding time: 12.136 seconds
+  Computation time: 3.088 seconds (25.445% of total)
+  Computation throughput: 21222.8 MB/s
+  I/O overhead: 3.357 seconds (27.6615% of total)
+    - Read time: 3.319 seconds
+    - Network send time (simulated): 0.038 seconds
+  Other overhead: 5.691 seconds (46.8935% of total)
+Encoding throughput: 5400.13 MB/s
