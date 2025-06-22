@@ -1,0 +1,2 @@
+code_type,k,m,x,y,block_size,total_data_size,encode_time,encode_throughput,compute_time,io_time,read_time,simulated_send_time,other_time
+RS,128,4,42,3,32,65536,19.344,3387.92,3.683,5.794,5.748,0.046,9.867

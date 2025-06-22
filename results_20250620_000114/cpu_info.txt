@@ -1,0 +1,37 @@
+=== CPU Information ===
+CPU Model:
+12th Gen Intel(R) Core(TM) i7-12700
+Architecture:
+x86_64
+CPU Family:
+6
+Model:
+151
+Stepping:
+2
+Physical Cores:
+
+Threads per Core:
+
+Total Logical Cores:
+20
+CPU Frequency (min):
+CPU Frequency (max):
+CPU Boost Status:
+Disabled
+L1 Data Cache:
+
+L1 Instruction Cache:
+
+L2 Cache:
+
+L3 Cache:
+
+Hyper-threading:
+20 cores (HT enabled if > physical cores)
+Virtualization Support:
+AVX2 Support:
+AVX-512 Support:
+No
+Thermal Design Power (TDP):
+CPU Temperature:

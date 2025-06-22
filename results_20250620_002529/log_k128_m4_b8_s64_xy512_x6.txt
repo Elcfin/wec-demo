@@ -1,0 +1,1936 @@
+Verbose mode enabled.
+Output will be saved to: results_20250620_002529/k128_m4_b8_s64_xy512_x6.csv
+Output file opened successfully.
+=== Starting single test ===
+Initializing temporary data files...
+Temporary data files initialized.
+Thread 135258886371008 processing stripe 1
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135258687092416 processing stripe 2
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135258485765824 processing stripe 3
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135258284439232 processing stripe 4
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135258083112640 processing stripe 5
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135257881786048 processing stripe 6
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135257680459456 processing stripe 7
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135257479132864 processing stripe 8
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135257277806272 processing stripe 9
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135257076479680 processing stripe 10
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135256875153088 processing stripe 11
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135256673826496 processing stripe 12
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135256472499904 processing stripe 13
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135256271173312 processing stripe 14
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135256069846720 processing stripe 15
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135255868520128 processing stripe 16
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135255667193536 processing stripe 17
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135255465866944 processing stripe 18
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135255264540352 processing stripe 19
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135255256147648 processing stripe 20
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135254840964800 processing stripe 21
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135254595598016 processing stripe 23
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135254614472384 processing stripe 22
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135254832572096 processing stripe 24
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135254606079680 processing stripe 25
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135253662320320 processing stripe 26
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135253872080576 processing stripe 27
+Thread 135253253420736 processing stripe 28
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135254635415232 processing stripe 29
+  Processing batch 1/22 (blocks 0 to 5)
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135254587205312 processing stripe 30
+Thread 135254140475072 processing stripe 31
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135254627022528 processing stripe 32
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135252555040448 processing stripe 33
+  Processing batch 1/22 (blocks 0 to 5)
+Thread Thread 135252253066944135252244674240 processing stripe  processing stripe 3536
+
+Thread 135252261459648 processing stripe 34
+  Processing batch 1/22 (blocks 0 to 5)
+  Processing batch 1/22 (blocks 0 to 5)
+  Processing batch 1/22 (blocks 0 to 5)
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135251764393664 processing stripe 37
+  Processing batch 1/22 (blocks 0 to 5)
+Thread Thread 135253855295168 processing stripe 39
+Thread 135251334526656 processing stripe 40
+135254861887168 processing stripe 38
+  Processing batch 1/22 (blocks 0 to 5)
+  Processing batch 1/22 (blocks 0 to 5)
+  Processing batch 1/22 (blocks 0 to 5)
+Thread Thread 135251326133952135250759755456 processing stripe 41 processing stripe 43
+
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135252546647744 processing stripe 42
+  Processing batch 1/22 (blocks 0 to 5)
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135250153830080 processing stripe 45
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135250172626624 processing stripe 44
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135249770006208 processing stripe 46
+Thread Thread 135249753220800135249761613504 processing stripe 48 processing stripe 47
+
+  Processing batch 1/22 (blocks 0 to 5)
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135249069598400 processing stripe 50
+Thread 135251355440832 processing stripe 49
+Thread 135249050728128 processing stripe 51
+  Processing batch 1/22 (blocks 0 to 5)
+  Processing batch 1/22 (blocks 0 to 5)
+  Processing batch 1/22 (blocks 0 to 5)
+  Processing batch 1/22 (blocks 0 to 5)
+Thread Thread 135249325422272135249619035840 processing stripe 53 processing stripe 52
+
+  Processing batch 1/22 (blocks 0 to 5)
+  Processing batch 1/22 (blocks 0 to 5)
+Thread Thread Thread 135249061205696135248226502336135249042335424 processing stripe  processing stripe  processing stripe 545655
+
+
+Thread 135247941334720 processing stripe 57
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135247773525696 processing stripe 58
+  Processing batch 1/22 (blocks 0 to 5)
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135247765132992 processing stripe 59
+  Processing batch 1/22 (blocks 0 to 5)
+  Processing batch 1/22 (blocks 0 to 5)
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135246823552704 processing stripe 61
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135249088476864 processing stripe 60
+  Processing batch 1/22 (blocks 0 to 5)
+Thread 135246815160000 processing stripe 62
+Thread 135246806767296 processing stripe 63
+Thread 135246607496896 processing stripe 64
+  Processing batch 1/22 (blocks 0 to 5)
+  Processing batch 1/22 (blocks 0 to 5)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 1/22 (blocks 0 to 5)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 2/22 (blocks 6 to 11)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 3/22 (blocks 12 to 17)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 4/22 (blocks 18 to 23)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch   Processing batch 5/22 (blocks 24 to 29)7/22 (blocks 36 to 41)
+
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 5/22 (blocks 24 to 29)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch   Processing batch 6/22 (blocks 30 to 35)
+6/22 (blocks 30 to 35)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 6/22 (blocks 30 to 35)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 7/22 (blocks 36 to 41)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 9/22  Processing batch  (blocks 48 to 53)9/22 (blocks 48 to 53)
+
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 11/22 (blocks 60 to 65)  Processing batch 
+11/22 (blocks 60 to 65)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 8/22 (blocks 42 to 47)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch   Processing batch 11/22 (blocks 6012 to 65)/22 (blocks 66 to 71)
+
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 9/22 (blocks 48 to 53)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch   Processing batch 1212/22 (blocks 66 to 71)/22 (blocks 66 to 71)
+
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 10/22 (blocks 54 to 59)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 11/22 (blocks 60 to 65)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 12/22 (blocks 66 to 71)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 13/22 (blocks 72 to 77)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 14/22 (blocks 78 to 83)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 15/22 (blocks 84 to 89)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 16/22 (blocks 90 to 95)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 17/22 (blocks 96 to 101)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 21/22 (blocks 120 to 125)
+=== Stripe Encoding Completed ===
+  Compute time: 2.111 seconds
+  I/O overhead: 6.308 seconds
+    - Read time: 6.291 seconds
+    - Network send time (simulated): 0.017 seconds
+  Total time: 15.84 seconds
+  Other overhead: 7.421 seconds
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 19/22 (blocks 108 to 113)
+=== Stripe Encoding Completed ===
+  Compute time: 2.211 seconds
+  I/O overhead: 5.968 seconds
+    - Read time: 5.943 seconds
+    - Network send time (simulated): 0.025 seconds
+  Total time: 15.685 seconds
+  Other overhead: 7.506 seconds
+  Processing batch 20/22 (blocks 114 to 119)
+=== Stripe Encoding Completed ===
+  Compute time: 2.165 seconds
+  I/O overhead: 5.551 seconds
+    - Read time: 5.475 seconds
+    - Network send time (simulated): 0.076 seconds
+  Total time: 15.931 seconds
+  Other overhead: 8.215 seconds
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 18/22 (blocks 102 to 107)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 20/22 (blocks 114 to 119)
+=== Stripe Encoding Completed ===
+  Compute time: 2.03 seconds
+  I/O overhead: 6.217 seconds
+    - Read time: 6.214 seconds
+    - Network send time (simulated): 0.003 seconds
+  Total time: 16.019 seconds
+  Other overhead: 7.772 seconds
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 21/22 (blocks 120 to 125)
+=== Stripe Encoding Completed ===
+  Compute time: 2.232 seconds
+  I/O overhead: 5.622 seconds
+    - Read time: 5.604 seconds
+    - Network send time (simulated): 0.018 seconds
+  Total time: 15.994 seconds
+  Other overhead: 8.14 seconds
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 20/22 (blocks 114 to 119)
+=== Stripe Encoding Completed ===
+  Compute time: 2.18 seconds
+  I/O overhead: 6.056 seconds
+    - Read time: 6.033 seconds
+    - Network send time (simulated): 0.023 seconds
+  Total time: 16.379 seconds
+  Other overhead: 8.143 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 2.21 seconds
+  I/O overhead: 6.129 seconds
+    - Read time: 6.09 seconds
+    - Network send time (simulated): 0.039 seconds
+  Total time: 16.426 seconds
+  Other overhead: 8.087 seconds
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 21/22 (blocks 120 to 125)
+=== Stripe Encoding Completed ===
+  Compute time: 1.984 seconds
+  I/O overhead: 5.993 seconds
+    - Read time: 5.923 seconds
+    - Network send time (simulated): 0.07 seconds
+  Total time: 16.505 seconds
+  Other overhead: 8.528 seconds
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 20/22 (blocks 114 to 119)
+=== Stripe Encoding Completed ===
+  Compute time: 2.475 seconds
+  I/O overhead: 5.952 seconds
+    - Read time: 5.913 seconds
+    - Network send time (simulated): 0.039 seconds
+  Total time: 16.544 seconds
+  Other overhead: 8.117 seconds
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 22/22 (blocks 126 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 2.137 seconds
+  I/O overhead: 6.925 seconds
+    - Read time: 6.907 seconds
+    - Network send time (simulated): 0.018 seconds
+  Total time: 16.59 seconds
+  Other overhead: 7.528 seconds
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 19/22 (blocks 108 to 113)
+=== Stripe Encoding Completed ===
+  Compute time: 2.426 seconds
+  I/O overhead: 5.644 seconds
+    - Read time: 5.633 seconds
+    - Network send time (simulated): 0.011 seconds
+  Total time: 16.09 seconds
+  Other overhead: 8.02 seconds
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 21/22 (blocks 120 to 125)
+=== Stripe Encoding Completed ===
+  Compute time: 2.164 seconds
+  I/O overhead: 6.544 seconds
+    - Read time: 6.534 seconds
+    - Network send time (simulated): 0.01 seconds
+  Total time: 16.686 seconds
+  Other overhead: 7.978 seconds
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 22/22 (blocks 126 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 2.264 seconds
+  I/O overhead: 6.436 seconds
+    - Read time: 6.418 seconds
+    - Network send time (simulated): 0.018 seconds
+  Total time: 16.434 seconds
+  Other overhead: 7.734 seconds
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 20/22 (blocks 114 to 119)
+=== Stripe Encoding Completed ===
+  Compute time: 2.018 seconds
+  I/O overhead: 6.259 seconds
+    - Read time: 6.243 seconds
+    - Network send time (simulated): 0.016 seconds
+  Total time: 16.512 seconds
+  Other overhead: 8.235 seconds
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 19/22 (blocks 108 to 113)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 21/22 (blocks 120 to 125)
+=== Stripe Encoding Completed ===
+  Compute time: 2.411 seconds
+  I/O overhead: 6.25 seconds
+    - Read time: 6.239 seconds
+    - Network send time (simulated): 0.011 seconds
+  Total time: 16.683 seconds
+  Other overhead: 8.022 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 2.306 seconds
+  I/O overhead: 6.187 seconds
+    - Read time: 6.175 seconds
+    - Network send time (simulated): 0.012 seconds
+  Total time: 16.703 seconds
+  Other overhead: 8.21 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 2.218 seconds
+  I/O overhead: 6.371 seconds
+    - Read time: 6.356 seconds
+    - Network send time (simulated): 0.015 seconds
+  Total time: 16.956 seconds
+  Other overhead: 8.367 seconds
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 22/22 (blocks 126 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 2.27 seconds
+  I/O overhead: 6.635 seconds
+    - Read time: 6.62 seconds
+    - Network send time (simulated): 0.015 seconds
+  Total time: 16.409 seconds
+  Other overhead: 7.504 seconds
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 22/22 (blocks 126 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 2.217 seconds
+  I/O overhead: 6.603 seconds
+    - Read time: 6.588 seconds
+    - Network send time (simulated): 0.015 seconds
+  Total time: 17.055 seconds
+  Other overhead: 8.235 seconds
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 22/22 (blocks 126 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 2.153 seconds
+  I/O overhead: 6.69 seconds
+    - Read time: 6.673 seconds
+    - Network send time (simulated): 0.017 seconds
+  Total time: 16.917 seconds
+  Other overhead: 8.074 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 2.154 seconds
+  I/O overhead: 6.628 seconds
+    - Read time: 6.606 seconds
+    - Network send time (simulated): 0.022 seconds
+  Total time: 16.797 seconds
+  Other overhead: 8.015 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 1.889 seconds
+  I/O overhead: 7.402 seconds
+    - Read time: 7.357 seconds
+    - Network send time (simulated): 0.045 seconds
+  Total time: 16.84 seconds
+  Other overhead: 7.549 seconds
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 22/22 (blocks 126 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 1.936 seconds
+  I/O overhead: 7.375 seconds
+    - Read time: 7.361 seconds
+    - Network send time (simulated): 0.014 seconds
+  Total time: 17.279 seconds
+  Other overhead: 7.968 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 2.287 seconds
+  I/O overhead: 6.404 seconds
+    - Read time: 6.386 seconds
+    - Network send time (simulated): 0.018 seconds
+  Total time: 17.28 seconds
+  Other overhead: 8.589 seconds
+  Processing batch 20/22 (blocks 114 to 119)
+  Processing batch 20/22 (blocks 114 to 119)
+=== Stripe Encoding Completed ===
+  Compute time: 2.476 seconds
+  I/O overhead: 6.589 seconds
+    - Read time: 6.567 seconds
+    - Network send time (simulated): 0.022 seconds
+  Total time: 17.259 seconds
+  Other overhead: 8.194 seconds
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 22/22 (blocks 126 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 2.14 seconds
+  I/O overhead: 6.966 seconds
+    - Read time: 6.962 seconds
+    - Network send time (simulated): 0.004 seconds
+  Total time: 17.392 seconds
+  Other overhead: 8.286 seconds
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 22/22 (blocks 126 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 2.237 seconds
+  I/O overhead: 6.484 seconds
+    - Read time: 6.469 seconds
+    - Network send time (simulated): 0.015 seconds
+  Total time: 17.218 seconds
+  Other overhead: 8.497 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 1.971 seconds
+  I/O overhead: 6.827 seconds
+    - Read time: 6.811 seconds
+    - Network send time (simulated): 0.016 seconds
+  Total time: 17.166 seconds
+  Other overhead: 8.368 seconds
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 20/22 (blocks 114 to 119)
+=== Stripe Encoding Completed ===
+  Compute time: 2.196 seconds
+  I/O overhead: 7.239 seconds
+    - Read time: 7.222 seconds
+    - Network send time (simulated): 0.017 seconds
+  Total time: 17.494 seconds
+  Other overhead: 8.059 seconds
+  Processing batch 22/22 (blocks 126 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 1.952 seconds
+  I/O overhead: 7.043 seconds
+    - Read time: 7.024 seconds
+    - Network send time (simulated): 0.019 seconds
+  Total time: 16.902 seconds
+  Other overhead: 7.907 seconds
+  Processing batch 22/22 (blocks 126 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 2.152 seconds
+  I/O overhead: 7.326 seconds
+    - Read time: 7.312 seconds
+    - Network send time (simulated): 0.014 seconds
+  Total time: 17.277 seconds
+  Other overhead: 7.799 seconds
+  Processing batch 21/22 (blocks 120 to 125)
+=== Stripe Encoding Completed ===
+  Compute time: 2.013 seconds
+  I/O overhead: 7.298 seconds
+    - Read time: 7.288 seconds
+    - Network send time (simulated): 0.01 seconds
+  Total time: 17.548 seconds
+  Other overhead: 8.237 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 2.267 seconds
+  I/O overhead: 7.298 seconds
+    - Read time: 7.29 seconds
+    - Network send time (simulated): 0.008 seconds
+  Total time: 17.347 seconds
+  Other overhead: 7.782 seconds
+  Processing batch 22/22 (blocks 126 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 2.264 seconds
+  I/O overhead: 7.068 seconds
+    - Read time: 7.06 seconds
+    - Network send time (simulated): 0.008 seconds
+  Total time: 17.552 seconds
+  Other overhead: 8.22 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 2.384 seconds
+  I/O overhead: 7.356 seconds
+    - Read time: 7.35 seconds
+    - Network send time (simulated): 0.006 seconds
+  Total time: 17.254 seconds
+  Other overhead: 7.514 seconds
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 21/22 (blocks 120 to 125)
+=== Stripe Encoding Completed ===
+  Compute time: 2.299 seconds
+  I/O overhead: 6.683 seconds
+    - Read time: 6.673 seconds
+    - Network send time (simulated): 0.01 seconds
+  Total time: 17.113 seconds
+  Other overhead: 8.131 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 2.143 seconds
+  I/O overhead: 6.471 seconds
+    - Read time: 6.465 seconds
+    - Network send time (simulated): 0.006 seconds
+  Total time: 17.298 seconds
+  Other overhead: 8.684 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 2.147 seconds
+  I/O overhead: 7.604 seconds
+    - Read time: 7.599 seconds
+    - Network send time (simulated): 0.005 seconds
+  Total time: 17.379 seconds
+  Other overhead: 7.628 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 2.134 seconds
+  I/O overhead: 7.167 seconds
+    - Read time: 7.164 seconds
+    - Network send time (simulated): 0.003 seconds
+  Total time: 17.521 seconds
+  Other overhead: 8.22 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 2.374 seconds
+  I/O overhead: 7.252 seconds
+    - Read time: 7.248 seconds
+    - Network send time (simulated): 0.004 seconds
+  Total time: 17.166 seconds
+  Other overhead: 7.54 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 2.433 seconds
+  I/O overhead: 6.933 seconds
+    - Read time: 6.929 seconds
+    - Network send time (simulated): 0.004 seconds
+  Total time: 17.429 seconds
+  Other overhead: 8.063 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 2.178 seconds
+  I/O overhead: 7.274 seconds
+    - Read time: 7.269 seconds
+    - Network send time (simulated): 0.005 seconds
+  Total time: 17.355 seconds
+  Other overhead: 7.903 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 2.086 seconds
+  I/O overhead: 7.684 seconds
+    - Read time: 7.679 seconds
+    - Network send time (simulated): 0.005 seconds
+  Total time: 17.671 seconds
+  Other overhead: 7.901 seconds
+  Processing batch 22/22 (blocks 126 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 1.806 seconds
+  I/O overhead: 7.516 seconds
+    - Read time: 7.511 seconds
+    - Network send time (simulated): 0.005 seconds
+  Total time: 17.579 seconds
+  Other overhead: 8.257 seconds
+  Processing batch 22/22 (blocks 126 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 2.333 seconds
+  I/O overhead: 7.405 seconds
+    - Read time: 7.386 seconds
+    - Network send time (simulated): 0.019 seconds
+  Total time: 17.162 seconds
+  Other overhead: 7.424 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 2.088 seconds
+  I/O overhead: 7.295 seconds
+    - Read time: 7.28 seconds
+    - Network send time (simulated): 0.015 seconds
+  Total time: 17.224 seconds
+  Other overhead: 7.841 seconds
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 22/22 (blocks 126 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 2.213 seconds
+  I/O overhead: 7.531 seconds
+    - Read time: 7.518 seconds
+    - Network send time (simulated): 0.013 seconds
+  Total time: 17.725 seconds
+  Other overhead: 7.981 seconds
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 22/22 (blocks 126 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 2.018 seconds
+  I/O overhead: 7.673 seconds
+    - Read time: 7.661 seconds
+    - Network send time (simulated): 0.012 seconds
+  Total time: 17.189 seconds
+  Other overhead: 7.498 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 2.321 seconds
+  I/O overhead: 7.243 seconds
+    - Read time: 7.232 seconds
+    - Network send time (simulated): 0.011 seconds
+  Total time: 17.192 seconds
+  Other overhead: 7.628 seconds
+  Processing batch 21/22 (blocks 120 to 125)
+  Processing batch 22/22 (blocks 126 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 1.986 seconds
+  I/O overhead: 8.067 seconds
+    - Read time: 8.057 seconds
+    - Network send time (simulated): 0.01 seconds
+  Total time: 17.754 seconds
+  Other overhead: 7.701 seconds
+  Processing batch 22/22 (blocks 126 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 2.023 seconds
+  I/O overhead: 7.421 seconds
+    - Read time: 7.419 seconds
+    - Network send time (simulated): 0.002 seconds
+  Total time: 17.225 seconds
+  Other overhead: 7.781 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 2.328 seconds
+  I/O overhead: 7.501 seconds
+    - Read time: 7.499 seconds
+    - Network send time (simulated): 0.002 seconds
+  Total time: 17.846 seconds
+  Other overhead: 8.017 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 2.054 seconds
+  I/O overhead: 7.81 seconds
+    - Read time: 7.808 seconds
+    - Network send time (simulated): 0.002 seconds
+  Total time: 17.742 seconds
+  Other overhead: 7.878 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 2.123 seconds
+  I/O overhead: 7.548 seconds
+    - Read time: 7.545 seconds
+    - Network send time (simulated): 0.003 seconds
+  Total time: 17.869 seconds
+  Other overhead: 8.198 seconds
+  Processing batch 21/22 (blocks 120 to 125)
+=== Stripe Encoding Completed ===
+  Compute time: 2.014 seconds
+  I/O overhead: 7.968 seconds
+    - Read time: 7.965 seconds
+    - Network send time (simulated): 0.003 seconds
+  Total time: 17.88 seconds
+  Other overhead: 7.898 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 1.976 seconds
+  I/O overhead: 7.864 seconds
+    - Read time: 7.862 seconds
+    - Network send time (simulated): 0.002 seconds
+  Total time: 17.582 seconds
+  Other overhead: 7.742 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 2.063 seconds
+  I/O overhead: 7.84 seconds
+    - Read time: 7.838 seconds
+    - Network send time (simulated): 0.002 seconds
+  Total time: 17.623 seconds
+  Other overhead: 7.72 seconds
+  Processing batch 22/22 (blocks 126 to 127)
+  Processing batch 22/22 (blocks 126 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 2.197 seconds
+  I/O overhead: 7.826 seconds
+    - Read time: 7.822 seconds
+    - Network send time (simulated): 0.004 seconds
+  Total time: 17.872 seconds
+  Other overhead: 7.849 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 1.936 seconds
+  I/O overhead: 7.315 seconds
+    - Read time: 7.313 seconds
+    - Network send time (simulated): 0.002 seconds
+  Total time: 17.655 seconds
+  Other overhead: 8.404 seconds
+  Processing batch 22/22 (blocks 126 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 2.096 seconds
+  I/O overhead: 8.024 seconds
+    - Read time: 8.022 seconds
+    - Network send time (simulated): 0.002 seconds
+  Total time: 17.703 seconds
+  Other overhead: 7.583 seconds
+  Processing batch 22/22 (blocks 126 to 127)
+=== Stripe Encoding Completed ===
+  Compute time: 2.326 seconds
+  I/O overhead: 7.771 seconds
+    - Read time: 7.77 seconds
+    - Network send time (simulated): 0.001 seconds
+  Total time: 17.656 seconds
+  Other overhead: 7.559 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 2.442 seconds
+  I/O overhead: 8.014 seconds
+    - Read time: 8.013 seconds
+    - Network send time (simulated): 0.001 seconds
+  Total time: 18.005 seconds
+  Other overhead: 7.549 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 2.201 seconds
+  I/O overhead: 8.16 seconds
+    - Read time: 8.159 seconds
+    - Network send time (simulated): 0.001 seconds
+  Total time: 18.012 seconds
+  Other overhead: 7.651 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 2.143 seconds
+  I/O overhead: 8.114 seconds
+    - Read time: 8.112 seconds
+    - Network send time (simulated): 0.002 seconds
+  Total time: 17.548 seconds
+  Other overhead: 7.291 seconds
+
+=== In-Memory EC Encoding Completed ===
+Total encoding time: 18.067 seconds
+  Computation time: 2.201 seconds (12.1824% of total)
+  Computation throughput: 29775.6 MB/s
+  I/O overhead: 8.16 seconds (45.1652% of total)
+    - Read time: 8.159 seconds
+    - Network send time (simulated): 0.001 seconds
+  Other overhead: 7.706 seconds (42.6523% of total)
+Encoding throughput: 3627.39 MB/s

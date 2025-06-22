@@ -1,0 +1,14 @@
+"pcp-dstat 6.2.0 CSV Output"
+"Author:","PCP team <pcp@groups.io> and Dag Wieers <dag@wieers.com>",,,,"URL:","https://pcp.io/ and http://dag.wieers.com/home-made/dstat/"
+"Host:","DESKTOP-SUL4QOG",,,,"User:","elcfin"
+"Cmdline:","dstat -t -cdm --output ./dstat/dstat_output_20250620_212053.csv",,,,"Date:","20 Jun 2025 21:20:53 CST"
+"system","total usage",,,,,"dsk/total",,"memory usage",,,
+"time","total usage:usr","total usage:sys","total usage:idl","total usage:wai","total usage:stl","dsk/total:read","dsk/total:writ","used","free","buf","cach"
+20-06 21:20:53,,,2732400,8911708,44620,4513636
+20-06 21:20:54,0.350,0.200,99.236,0,0,179.975,0,2734748,8909308,44620,4513688
+20-06 21:20:55,0.200,0.400,99.444,0,0,0,11.993,2732140,8911884,44620,4513688
+20-06 21:20:56,0.545,1.091,98.238,0,0,0,75.377,3185528,8458484,44628,4513688
+20-06 21:20:57,1.394,4.082,94.594,0,0,0,0,4775168,6868844,44628,4513688
+20-06 21:20:58,4.292,0.937,94.866,0,0,0,0,5037192,6606820,44628,4513688
+20-06 21:20:59,1.214,1.315,97.212,0,0,36.416,40.463,2730760,8913252,44628,4513688
+20-06 21:21:00,0.050,0.200,99.606,0,0,0,0,2736848,8907280,44628,4513572
