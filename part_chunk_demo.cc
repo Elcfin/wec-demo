@@ -18,6 +18,78 @@
 using namespace std;
 using namespace std::chrono;
 
+// Native implementation of Galois Field arithmetic for Reed-Solomon coding
+class GaloisField {
+private:
+    uint8_t log_table[256];
+    uint8_t exp_table[256];
+    
+public:
+    GaloisField() {
+        // Initialize tables for GF(2^8) arithmetic with primitive polynomial x^8 + x^4 + x^3 + x^2 + 1 (0x11D)
+        uint16_t x = 1;
+        for (int i = 0; i < 255; i++) {
+            exp_table[i] = x & 0xFF;
+            
+            // Compute log table
+            log_table[exp_table[i]] = i;
+            
+            // Multiply by x (equivalent to left shift and conditional XOR with the primitive polynomial)
+            x <<= 1;
+            if (x & 0x100)
+                x ^= 0x11D; // XOR with the primitive polynomial if overflow
+        }
+        
+        // Handle special cases
+        exp_table[255] = exp_table[0]; // For wrap-around in multiplication
+        log_table[0] = 0; // Log of 0 is undefined, but we'll use 0 for computation
+    }
+    
+    // Multiply two elements in GF(2^8)
+    inline uint8_t multiply(uint8_t a, uint8_t b) const {
+        if (a == 0 || b == 0) return 0;
+        return exp_table[(log_table[a] + log_table[b]) % 255];
+    }
+};
+
+// Global instance of GF for efficiency
+static GaloisField gf;
+
+// Native implementation of Reed-Solomon erasure coding
+void rs_encode_data_native(
+    uint64_t len,          // Length of each data/coding block in bytes
+    uint64_t k,            // Number of data blocks
+    uint64_t m,            // Number of coding blocks to produce
+    uint8_t *gftbls,       // Galois Field tables for encoding
+    uint8_t **data_ptrs,   // Array of k pointers to data blocks
+    uint8_t **coding_ptrs  // Array of m pointers to coding blocks
+) {
+    // Process each coding block
+    for (uint64_t i = 0; i < m; i++) {
+        // Process each byte position
+        for (uint64_t byte_idx = 0; byte_idx < len; byte_idx++) {
+            uint8_t *coding_byte = coding_ptrs[i] + byte_idx;
+            uint8_t result = 0;
+            
+            // For each data block
+            for (uint64_t j = 0; j < k; j++) {
+                uint8_t data_byte = data_ptrs[j][byte_idx];
+                if (data_byte == 0) continue; // Skip multiplication by zero
+                
+                // Get coefficient from Galois Field table (simplified)
+                uint8_t coefficient = gftbls[(i * k + j) * 32]; // Simplified access to coefficient
+                
+                // Perform Galois Field multiplication and XOR to the result
+                result ^= gf.multiply(coefficient, data_byte);
+            }
+            
+            // Store the result
+            *coding_byte = result;
+        }
+    }
+}
+
+
 struct ThreadSafeMetrics
 {
     std::mutex mtx;
@@ -218,8 +290,10 @@ void run_stripe(uint64_t x, uint64_t k, uint64_t m, uint64_t block_size, uint64_
                     chunk_parity_ptrs[i] = local_parity_ptrs[i] + chunk_offset;
                 }
                 auto compute_start = high_resolution_clock::now();
-                ec_encode_data_sse(current_chunk_size, current_batch_size, m, batch_gftbl,
+                rs_encode_data_native(current_chunk_size, current_batch_size, m, batch_gftbl,
                                    chunk_data_ptrs.data(), chunk_parity_ptrs.data());
+                // ec_encode_data_sse(current_chunk_size, current_batch_size, m, batch_gftbl,
+                //                    chunk_data_ptrs.data(), chunk_parity_ptrs.data());
                 auto compute_end = high_resolution_clock::now();
                 metrics.compute_time += duration_cast<milliseconds>(compute_end - compute_start).count() / 1000.0;
             }
@@ -227,8 +301,10 @@ void run_stripe(uint64_t x, uint64_t k, uint64_t m, uint64_t block_size, uint64_
         else
         {
             auto compute_start = high_resolution_clock::now();
-            ec_encode_data_sse(block_size, current_batch_size, m, batch_gftbl,
+            rs_encode_data_native(block_size, current_batch_size, m, batch_gftbl,
                                data_ptrs.data(), local_parity_ptrs.data());
+            // ec_encode_data_sse(block_size, current_batch_size, m, batch_gftbl,
+            //                    data_ptrs.data(), local_parity_ptrs.data());
             auto compute_end = high_resolution_clock::now();
             metrics.compute_time += duration_cast<milliseconds>(compute_end - compute_start).count() / 1000.0;
         }
