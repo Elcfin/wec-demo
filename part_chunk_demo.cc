@@ -345,11 +345,12 @@ void run(uint64_t k, uint64_t m, uint64_t block_size, ofstream &outfile, bool ve
     {
         for (uint64_t i = 0; i < k; ++i)
         {
-            if (stripe % 2)
-                data_block_filepaths[stripe][i] = temp_dir + "/large_data_s0_b" + to_string(i) + ".tmp";
-            else
-                data_block_filepaths[stripe][i] = temp_dir + "/large_data_s1_b" + to_string(i) + ".tmp";
-            // data_block_filepaths[stripe][i] = temp_dir + "/large_data_s" + to_string(stripe) + "_b" + to_string(i) + ".tmp";
+            // if (stripe % 2)
+            //     data_block_filepaths[stripe][i] = temp_dir + "/large_data_s0_b" + to_string(i) + ".tmp";
+            // else
+            //     data_block_filepaths[stripe][i] = temp_dir + "/large_data_s1_b" + to_string(i) + ".tmp";
+            data_block_filepaths[stripe][i] = temp_dir + "/large_data_s" + to_string(stripe) + "_b" + to_string(i) + ".tmp";
+
             // 数据已经持久化
             // for (uint64_t j = 0; j < block_size; ++j)
             // {
