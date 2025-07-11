@@ -1,13 +1,12 @@
 #!/bin/bash
 
 # Global parameters for the experiment
-k=128
 m=4
-b=32
-s=8
+k=32
+s=2
 f=/home/elcfin/shm
-xy=64
-x_values=(32) # 20 24) # 28 32) # 36 40 44 48 52 56 60 64)
+b_values=(1 2 4 8 16 32 64 128)
+isal_flags=(true false)  # Array for isal flag
 
 # Check if temporary directory exists, create it if not
 if [ ! -d "$f" ]; then
@@ -24,25 +23,9 @@ RESULTS_DIR="res/results_$(date +%Y%m%d_%H%M%S)"
 mkdir -p "$RESULTS_DIR" || { echo "Failed to create results directory"; exit 1; }
 echo "All results will be saved to: $RESULTS_DIR"
 
-# Execute initialization command
-echo -e "[$(date '+%H:%M:%S')] Executing initialization command: ./file_demo -f $f -k $k -b $b -s $s"
-INIT_LOG="$RESULTS_DIR/init_$(date +%H%M%S).log"
-./file_demo -f $f -k $k -b $b -s $s > "$INIT_LOG" 2>&1
-
-if [ $? -ne 0 ]; then
-    echo -e "\n[$(date '+%H:%M:%S')] Error: Initialization command failed" >&2
-    echo "Check log: $INIT_LOG" >&2
-    # Stop dstat monitoring
-    kill -9 $DSTAT_PID
-    exit 1
-else
-    echo -e "\n[$(date '+%H:%M:%S')] Initialization completed successfully"
-    echo "Initialization log: $INIT_LOG"
-fi
-
 # Define constants and parameter sets
 EXECUTABLE="./part_chunk_demo"
-OUTPUT_BASE="k${k}_m${m}_b${b}_s${s}_xy${xy}"
+OUTPUT_BASE="m${m}_k${k}_s${s}"
 
 # Function to check if command executed successfully
 check_status() {
@@ -54,26 +37,44 @@ check_status() {
 }
 
 # Iterate through x values and execute commands
-for x in "${x_values[@]}"; do
-    sudo sh -c "sync; echo 3 > /proc/sys/vm/drop_caches"  
-    echo "[$(date '+% H:% M:% S')] File cache cleared, simulating cold start"
+for b in "${b_values[@]}"; do
+    for isal in "${isal_flags[@]}"; do
+        # Execute initialization command
+        echo -e "[$(date '+%H:%M:%S')] Executing initialization command: ./file_demo -f $f -k $k -b $b -s $s"
+        INIT_LOG="$RESULTS_DIR/init_$(date +%H%M%S).log"
+        ./file_demo -f $f -k $k -b $b -s $s > "$INIT_LOG" 2>&1
 
-    echo -e "\n[$(date '+%H:%M:%S')] Starting execution: $EXECUTABLE -v -f $f -k $k -b $b -s $s -o "${RESULTS_DIR}/${OUTPUT_BASE}_x$x.csv" -x $x -a ${xy}"
-    
-    # Execute command and capture output
-    LOG_FILE="$RESULTS_DIR/log_${OUTPUT_BASE}_x${x}.txt"
-    start_time=$(date +%s.%N)
-    
-    # Redirect stdout and stderr to log file
-    $EXECUTABLE -v -f $f -k $k -b $b -s $s -o "${RESULTS_DIR}/${OUTPUT_BASE}_x$x.csv" -x $x -a ${xy} > "$LOG_FILE" 2>&1
-    check_status "Execution for x=$x failed" || continue
-    
-    end_time=$(date +%s.%N)
-    elapsed=$(echo "$end_time - $start_time" | bc)
-    
-    echo -e "[$(date '+%H:%M:%S')] Completed (Duration: ${elapsed}s)\n"
-    echo "Log saved to: $LOG_FILE"
-    echo "------------------------"
+        if [ $? -ne 0 ]; then
+            echo -e "\n[$(date '+%H:%M:%S')] Error: Initialization command failed" >&2
+            echo "Check log: $INIT_LOG" >&2
+            # Stop dstat monitoring
+            kill -9 $DSTAT_PID
+            exit 1
+        else
+            echo -e "\n[$(date '+%H:%M:%S')] Initialization completed successfully"
+            echo "Initialization log: $INIT_LOG"
+        fi
+
+        x=$k
+        xy=$k
+        i_param=$([ "$isal" = true ] && echo "-i" || echo "")
+        echo -e "\n[$(date '+%H:%M:%S')] Starting execution: $EXECUTABLE -v -f $f -k $k -b $b -s $s -o "${RESULTS_DIR}/${OUTPUT_BASE}_b${b}_i${isal}.csv" -x $x -a ${xy} $i_param"
+
+        # Execute command and capture output
+        LOG_FILE="$RESULTS_DIR/log_${OUTPUT_BASE}_b${b}_i${isal}.txt"
+        start_time=$(date +%s.%N)
+        
+        # Redirect stdout and stderr to log file
+        $EXECUTABLE -v -f $f -k $k -b $b -s $s -o "${RESULTS_DIR}/${OUTPUT_BASE}_b${b}_i${isal}.csv" -x $x -a ${xy} $i_param > "$LOG_FILE" 2>&1
+        check_status "Execution for b=$b failed" || continue
+        
+        end_time=$(date +%s.%N)
+        elapsed=$(echo "$end_time - $start_time" | bc)
+        
+        echo -e "[$(date '+%H:%M:%S')] Completed (Duration: ${elapsed}s)\n"
+        echo "Log saved to: $LOG_FILE"
+        echo "------------------------"
+    done
 done
 
 # Summarize results
