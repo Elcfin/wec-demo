@@ -6,6 +6,7 @@ b=32
 s=8
 f=/home/elcfin/shm
 k_values=(4 8 16 32 64 128)
+isal=true
 
 # Check if temporary directory exists, create it if not
 if [ ! -d "$f" ]; then
@@ -57,14 +58,15 @@ for k in "${k_values[@]}"; do
 
     x=$k
     xy=$k
-    echo -e "\n[$(date '+%H:%M:%S')] Starting execution: $EXECUTABLE -v -f $f -k $k -b $b -s $s -o "${RESULTS_DIR}/${OUTPUT_BASE}_k$k.csv" -x $x -a ${xy}"
-    
+    i_param=$([ "$isal" = true ] && echo "-i" || echo "")
+    echo -e "\n[$(date '+%H:%M:%S')] Starting execution: $EXECUTABLE -v -f $f -k $k -b $b -s $s -o "${RESULTS_DIR}/${OUTPUT_BASE}_k$k.csv" -x $x -a ${xy} $i_param"
+
     # Execute command and capture output
-    LOG_FILE="$RESULTS_DIR/log_${OUTPUT_BASE}_k${k}.txt"
+    LOG_FILE="$RESULTS_DIR/log_${OUTPUT_BASE}_k${k}_i${isal}.txt"
     start_time=$(date +%s.%N)
     
     # Redirect stdout and stderr to log file
-    $EXECUTABLE -v -f $f -k $k -b $b -s $s -o "${RESULTS_DIR}/${OUTPUT_BASE}_k$k.csv" -x $x -a ${xy} > "$LOG_FILE" 2>&1
+    $EXECUTABLE -v -f $f -k $k -b $b -s $s -o "${RESULTS_DIR}/${OUTPUT_BASE}_k$k.csv" -x $x -a ${xy} $i_param > "$LOG_FILE" 2>&1
     check_status "Execution for k=$k failed" || continue
     
     end_time=$(date +%s.%N)

@@ -1,0 +1,34 @@
+Verbose mode enabled.
+Output will be saved to: res/results_20250711_201437/m4_k32_s2_b16_ifalse.csv
+Output file opened successfully.
+=== Starting single test ===
+Initializing temporary data files...
+Temporary data files initialized.
+Thread 124101094012608 processing stripe 1
+  Processing batch 1/1 (blocks 0 to 31)
+=== Stripe Encoding Completed ===
+  Compute time: 7.359 seconds
+  I/O overhead: 1.327 seconds
+    - Read time: 1.324 seconds
+    - Network send time (simulated): 0.003 seconds
+  Total time: 8.935 seconds
+  Other overhead: 0.249 seconds
+Thread 124101094012608 processing stripe 2
+  Processing batch 1/1 (blocks 0 to 31)
+=== Stripe Encoding Completed ===
+  Compute time: 3.68 seconds
+  I/O overhead: 1.271 seconds
+    - Read time: 1.267 seconds
+    - Network send time (simulated): 0.004 seconds
+  Total time: 5.191 seconds
+  Other overhead: 0.24 seconds
+
+=== In-Memory EC Encoding Completed ===
+Total encoding time: 14.166 seconds
+  Computation time: 11.039 seconds (77.926% of total)
+  Computation throughput: 92.762 MB/s
+  I/O overhead: 2.598 seconds (18.3397% of total)
+    - Read time: 2.591 seconds
+    - Network send time (simulated): 0.007 seconds
+  Other overhead: 0.529 seconds (3.73429% of total)
+Encoding throughput: 72.2858 MB/s
