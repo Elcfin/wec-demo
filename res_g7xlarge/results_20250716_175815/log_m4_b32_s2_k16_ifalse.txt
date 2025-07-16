@@ -1,0 +1,30 @@
+Verbose mode enabled.
+Output will be saved to: res_g7xlarge/results_20250716_175815/m4_b32_s2_k16_ifalse.csv
+Output file opened successfully.
+=== Starting single test ===
+Initializing temporary data files...
+Temporary data files initialized.
+=== Stripe Encoding Completed ===
+  Compute time: 16.292 seconds
+  I/O overhead: 4.651 seconds
+    - Read time: 4.64 seconds
+    - Network send time (simulated): 0.011 seconds
+  Total time: 20.953 seconds
+  Other overhead: 0.01 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 32.583 seconds
+  I/O overhead: 8.224 seconds
+    - Read time: 8.202 seconds
+    - Network send time (simulated): 0.022 seconds
+  Total time: 19.874 seconds
+  Other overhead: -20.933 seconds
+
+=== In-Memory EC Encoding Completed ===
+Total encoding time: 40.889 seconds
+  Computation time: 32.583 seconds (79.6865% of total)
+  Computation throughput: 31.4274 MB/s
+  I/O overhead: 8.224 seconds (20.113% of total)
+    - Read time: 8.202 seconds
+    - Network send time (simulated): 0.022 seconds
+  Other overhead: 0.082 seconds (0.200543% of total)
+Encoding throughput: 25.0434 MB/s

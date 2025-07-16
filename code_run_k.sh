@@ -30,11 +30,7 @@ if [ ! -d "$f" ]; then
 fi
 
 # Create results directory (include timestamp in name)
-<<<<<<< HEAD
-RESULTS_DIR="res/results_$(date +%Y%m%d_%H%M%S)"
-=======
 RESULTS_DIR="res_zhaoxin/results_$(date +%Y%m%d_%H%M%S)"
->>>>>>> a3fba8ad2e54129f870d76aac4ecb0bde3547fa6
 mkdir -p "$RESULTS_DIR" || { echo "Failed to create results directory"; exit 1; }
 echo "All results will be saved to: $RESULTS_DIR"
 
