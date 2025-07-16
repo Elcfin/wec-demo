@@ -1,0 +1,30 @@
+Verbose mode enabled.
+Output will be saved to: res_zhaoxin/results_20250716_150709/m4_b32_s2_k4_ifalse.csv
+Output file opened successfully.
+=== Starting single test ===
+Initializing temporary data files...
+Temporary data files initialized.
+=== Stripe Encoding Completed ===
+  Compute time: 11.706 seconds
+  I/O overhead: 0.237 seconds
+    - Read time: 0.212 seconds
+    - Network send time (simulated): 0.025 seconds
+  Total time: 11.945 seconds
+  Other overhead: 0.002 seconds
+=== Stripe Encoding Completed ===
+  Compute time: 23.334 seconds
+  I/O overhead: 0.467 seconds
+    - Read time: 0.417 seconds
+    - Network send time (simulated): 0.05 seconds
+  Total time: 11.86 seconds
+  Other overhead: -11.941 seconds
+
+=== In-Memory EC Encoding Completed ===
+Total encoding time: 23.895 seconds
+  Computation time: 23.334 seconds (97.6522% of total)
+  Computation throughput: 10.9711 MB/s
+  I/O overhead: 0.467 seconds (1.95438% of total)
+    - Read time: 0.417 seconds
+    - Network send time (simulated): 0.05 seconds
+  Other overhead: 0.094 seconds (0.393388% of total)
+Encoding throughput: 10.7135 MB/s
