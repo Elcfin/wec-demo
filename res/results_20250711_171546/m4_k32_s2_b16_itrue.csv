@@ -1,2 +1,0 @@
-code_type,k,m,x,y,block_size,chunk_size(KB),total_data_size,encode_time,encode_throughput,compute_time,io_time,read_time,simulated_send_time,other_time,isa-l
-RS,32,4,32,1,16,64,1024,0.819,1250.31,0.156,0.096,0.086,0.01,0.567,1
