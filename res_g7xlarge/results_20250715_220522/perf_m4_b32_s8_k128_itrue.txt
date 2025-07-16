@@ -1,0 +1,30 @@
+# started on Tue Jul 15 22:26:46 2025
+
+
+ Performance counter stats for './part_chunk_demo -v -f /home/elcfin/shm -k 128 -b 32 -s 1 -o res_g7xlarge/results_20250715_220522/m4_b32_s8_k128.csv -x 128 -a 128 -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      LLC-loads                                                             
+   <not supported>      LLC-load-misses                                                       
+   <not supported>      LLC-stores                                                            
+   <not supported>      LLC-store-misses                                                      
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+      40.513635645 seconds time elapsed
+
+       3.828032000 seconds user
+       2.753829000 seconds sys
+
+

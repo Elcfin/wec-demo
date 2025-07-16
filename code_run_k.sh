@@ -13,9 +13,10 @@ trap cleanup_perf EXIT
 # Global parameters for the experiment
 m=4
 b=32
-s=8
+s=2
 f=/home/elcfin/shm
-k_values=(4 8 16 32 64 68 72 76 80 84 88 92 96 100 104 108 112 116 120 124 128)
+# k_values=(4 8 16 32 64 68 72 76 80 84 88 92 96 100 104 108 112 116 120 124 128)
+k_values=(4 8 16 32 64 128)
 isal_flags=(true false)  # Array for isal flag
 
 # Check if temporary directory exists, create it if not
@@ -34,8 +35,8 @@ mkdir -p "$RESULTS_DIR" || { echo "Failed to create results directory"; exit 1; 
 echo "All results will be saved to: $RESULTS_DIR"
 
 # Define constants and parameter sets
-EXECUTABLE="./part_chunk_demo"
-OUTPUT_BASE="m${m}_b${b}_s${s}"
+EXECUTABLE="./code_demo"
+OUTPUT_BASE="m${m}_b${b}"
 
 # Function to check if command executed successfully
 check_status() {
@@ -67,19 +68,17 @@ for k in "${k_values[@]}"; do
             echo "Initialization log: $INIT_LOG"
         fi
 
-        x=$k
-        xy=$k
         i_param=$([ "$isal" = true ] && echo "-i" || echo "")
-        echo -e "\n[$(date '+%H:%M:%S')] Starting execution with perf monitoring: $EXECUTABLE -v -f $f -k $k -b $b -s $s -o "${RESULTS_DIR}/${OUTPUT_BASE}_k$k.csv" -x $x -a ${xy} $i_param"
+        echo -e "\n[$(date '+%H:%M:%S')] Starting execution with perf monitoring: $EXECUTABLE -v -f $f -k $k -b $b -s $s -o "${RESULTS_DIR}/${OUTPUT_BASE}_s${s}_k${k}_i${isal}.csv" $i_param"
 
         # Execute command and capture output with perf monitoring
-        LOG_FILE="$RESULTS_DIR/log_${OUTPUT_BASE}_k${k}_i${isal}.txt"
-        PERF_FILE="$RESULTS_DIR/perf_${OUTPUT_BASE}_k${k}_i${isal}.txt"
+        LOG_FILE="$RESULTS_DIR/log_${OUTPUT_BASE}_s${s}_k${k}_i${isal}.txt"
+        PERF_FILE="$RESULTS_DIR/perf_${OUTPUT_BASE}_s${s}_k${k}_i${isal}.txt"
         start_time=$(date +%s.%N)
         
         # Start perf stat monitoring for cache statistics
         echo -e "[$(date '+%H:%M:%S')] Starting perf monitoring for cache statistics..."
-        perf stat -e cache-references,cache-misses,L1-dcache-loads,L1-dcache-load-misses,L1-dcache-stores,L1-dcache-store-misses,L1-icache-loads,L1-icache-load-misses,LLC-loads,LLC-load-misses,LLC-stores,LLC-store-misses,dTLB-loads,dTLB-load-misses,dTLB-stores,dTLB-store-misses,iTLB-loads,iTLB-load-misses -o "$PERF_FILE" $EXECUTABLE -v -f $f -k $k -b $b -s $s -o "${RESULTS_DIR}/${OUTPUT_BASE}_k$k.csv" -x $x -a ${xy} $i_param > "$LOG_FILE" 2>&1
+        perf stat -e cache-references,cache-misses,L1-dcache-loads,L1-dcache-load-misses,L1-dcache-stores,L1-dcache-store-misses,L1-icache-loads,L1-icache-load-misses,LLC-loads,LLC-load-misses,LLC-stores,LLC-store-misses,dTLB-loads,dTLB-load-misses,dTLB-stores,dTLB-store-misses,iTLB-loads,iTLB-load-misses -o "$PERF_FILE" $EXECUTABLE -v -f $f -k $k -b $b -s $s -o "${RESULTS_DIR}/${OUTPUT_BASE}_s${s}_k${k}_i${isal}.csv" $i_param > "$LOG_FILE" 2>&1
         check_status "Execution for k=$k failed" || continue
         
         end_time=$(date +%s.%N)

@@ -1,0 +1,696 @@
+=== Cache Performance Summary ===
+Generated on: Tue Jul 15 10:27:27 PM CST 2025
+
+k=100:
+# started on Tue Jul 15 22:18:47 2025
+
+
+ Performance counter stats for './part_chunk_demo -v -f /home/elcfin/shm -k 100 -b 32 -s 1 -o res_g7xlarge/results_20250715_220522/m4_b32_s8_k100.csv -x 100 -a 100 -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      LLC-loads                                                             
+   <not supported>      LLC-load-misses                                                       
+   <not supported>      LLC-stores                                                            
+   <not supported>      LLC-store-misses                                                      
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+      31.951807911 seconds time elapsed
+
+       3.295107000 seconds user
+       2.175673000 seconds sys
+
+
+
+----------------------------------------
+k=104:
+# started on Tue Jul 15 22:19:48 2025
+
+
+ Performance counter stats for './part_chunk_demo -v -f /home/elcfin/shm -k 104 -b 32 -s 1 -o res_g7xlarge/results_20250715_220522/m4_b32_s8_k104.csv -x 104 -a 104 -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      LLC-loads                                                             
+   <not supported>      LLC-load-misses                                                       
+   <not supported>      LLC-stores                                                            
+   <not supported>      LLC-store-misses                                                      
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+      33.218878248 seconds time elapsed
+
+       3.364957000 seconds user
+       2.307228000 seconds sys
+
+
+
+----------------------------------------
+k=108:
+# started on Tue Jul 15 22:20:52 2025
+
+
+ Performance counter stats for './part_chunk_demo -v -f /home/elcfin/shm -k 108 -b 32 -s 1 -o res_g7xlarge/results_20250715_220522/m4_b32_s8_k108.csv -x 108 -a 108 -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      LLC-loads                                                             
+   <not supported>      LLC-load-misses                                                       
+   <not supported>      LLC-stores                                                            
+   <not supported>      LLC-store-misses                                                      
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+      34.342901417 seconds time elapsed
+
+       3.443888000 seconds user
+       2.304625000 seconds sys
+
+
+
+----------------------------------------
+k=112:
+# started on Tue Jul 15 22:21:58 2025
+
+
+ Performance counter stats for './part_chunk_demo -v -f /home/elcfin/shm -k 112 -b 32 -s 1 -o res_g7xlarge/results_20250715_220522/m4_b32_s8_k112.csv -x 112 -a 112 -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      LLC-loads                                                             
+   <not supported>      LLC-load-misses                                                       
+   <not supported>      LLC-stores                                                            
+   <not supported>      LLC-store-misses                                                      
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+      35.767228036 seconds time elapsed
+
+       3.683109000 seconds user
+       2.421811000 seconds sys
+
+
+
+----------------------------------------
+k=116:
+# started on Tue Jul 15 22:23:06 2025
+
+
+ Performance counter stats for './part_chunk_demo -v -f /home/elcfin/shm -k 116 -b 32 -s 1 -o res_g7xlarge/results_20250715_220522/m4_b32_s8_k116.csv -x 116 -a 116 -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      LLC-loads                                                             
+   <not supported>      LLC-load-misses                                                       
+   <not supported>      LLC-stores                                                            
+   <not supported>      LLC-store-misses                                                      
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+      36.787704137 seconds time elapsed
+
+       3.523385000 seconds user
+       2.526182000 seconds sys
+
+
+
+----------------------------------------
+k=120:
+# started on Tue Jul 15 22:24:17 2025
+
+
+ Performance counter stats for './part_chunk_demo -v -f /home/elcfin/shm -k 120 -b 32 -s 1 -o res_g7xlarge/results_20250715_220522/m4_b32_s8_k120.csv -x 120 -a 120 -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      LLC-loads                                                             
+   <not supported>      LLC-load-misses                                                       
+   <not supported>      LLC-stores                                                            
+   <not supported>      LLC-store-misses                                                      
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+      38.079257633 seconds time elapsed
+
+       3.690521000 seconds user
+       2.574945000 seconds sys
+
+
+
+----------------------------------------
+k=124:
+# started on Tue Jul 15 22:25:30 2025
+
+
+ Performance counter stats for './part_chunk_demo -v -f /home/elcfin/shm -k 124 -b 32 -s 1 -o res_g7xlarge/results_20250715_220522/m4_b32_s8_k124.csv -x 124 -a 124 -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      LLC-loads                                                             
+   <not supported>      LLC-load-misses                                                       
+   <not supported>      LLC-stores                                                            
+   <not supported>      LLC-store-misses                                                      
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+      39.543189525 seconds time elapsed
+
+       3.994030000 seconds user
+       2.668044000 seconds sys
+
+
+
+----------------------------------------
+k=128:
+# started on Tue Jul 15 22:26:46 2025
+
+
+ Performance counter stats for './part_chunk_demo -v -f /home/elcfin/shm -k 128 -b 32 -s 1 -o res_g7xlarge/results_20250715_220522/m4_b32_s8_k128.csv -x 128 -a 128 -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      LLC-loads                                                             
+   <not supported>      LLC-load-misses                                                       
+   <not supported>      LLC-stores                                                            
+   <not supported>      LLC-store-misses                                                      
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+      40.513635645 seconds time elapsed
+
+       3.828032000 seconds user
+       2.753829000 seconds sys
+
+
+
+----------------------------------------
+k=16:
+# started on Tue Jul 15 22:08:27 2025
+
+
+ Performance counter stats for './part_chunk_demo -v -f /home/elcfin/shm -k 16 -b 32 -s 8 -o res_g7xlarge/results_20250715_220522/m4_b32_s8_k16.csv -x 16 -a 16 -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      LLC-loads                                                             
+   <not supported>      LLC-load-misses                                                       
+   <not supported>      LLC-stores                                                            
+   <not supported>      LLC-store-misses                                                      
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+      41.377580293 seconds time elapsed
+
+       6.804200000 seconds user
+       3.750739000 seconds sys
+
+
+
+----------------------------------------
+k=32:
+# started on Tue Jul 15 22:09:48 2025
+
+
+ Performance counter stats for './part_chunk_demo -v -f /home/elcfin/shm -k 32 -b 32 -s 4 -o res_g7xlarge/results_20250715_220522/m4_b32_s8_k32.csv -x 32 -a 32 -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      LLC-loads                                                             
+   <not supported>      LLC-load-misses                                                       
+   <not supported>      LLC-stores                                                            
+   <not supported>      LLC-store-misses                                                      
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+      40.033337362 seconds time elapsed
+
+       4.318766000 seconds user
+       3.200049000 seconds sys
+
+
+
+----------------------------------------
+k=4:
+# started on Tue Jul 15 22:05:58 2025
+
+
+ Performance counter stats for './part_chunk_demo -v -f /home/elcfin/shm -k 4 -b 32 -s 32 -o res_g7xlarge/results_20250715_220522/m4_b32_s8_k4.csv -x 4 -a 4 -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      LLC-loads                                                             
+   <not supported>      LLC-load-misses                                                       
+   <not supported>      LLC-stores                                                            
+   <not supported>      LLC-store-misses                                                      
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+      37.935694220 seconds time elapsed
+
+      20.679378000 seconds user
+       6.660342000 seconds sys
+
+
+
+----------------------------------------
+k=64:
+# started on Tue Jul 15 22:11:05 2025
+
+
+ Performance counter stats for './part_chunk_demo -v -f /home/elcfin/shm -k 64 -b 32 -s 2 -o res_g7xlarge/results_20250715_220522/m4_b32_s8_k64.csv -x 64 -a 64 -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      LLC-loads                                                             
+   <not supported>      LLC-load-misses                                                       
+   <not supported>      LLC-stores                                                            
+   <not supported>      LLC-store-misses                                                      
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+      40.484403709 seconds time elapsed
+
+       4.488920000 seconds user
+       2.917398000 seconds sys
+
+
+
+----------------------------------------
+k=68:
+# started on Tue Jul 15 22:12:04 2025
+
+
+ Performance counter stats for './part_chunk_demo -v -f /home/elcfin/shm -k 68 -b 32 -s 1 -o res_g7xlarge/results_20250715_220522/m4_b32_s8_k68.csv -x 68 -a 68 -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      LLC-loads                                                             
+   <not supported>      LLC-load-misses                                                       
+   <not supported>      LLC-stores                                                            
+   <not supported>      LLC-store-misses                                                      
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+      21.760726257 seconds time elapsed
+
+       2.282710000 seconds user
+       1.484860000 seconds sys
+
+
+
+----------------------------------------
+k=72:
+# started on Tue Jul 15 22:12:46 2025
+
+
+ Performance counter stats for './part_chunk_demo -v -f /home/elcfin/shm -k 72 -b 32 -s 1 -o res_g7xlarge/results_20250715_220522/m4_b32_s8_k72.csv -x 72 -a 72 -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      LLC-loads                                                             
+   <not supported>      LLC-load-misses                                                       
+   <not supported>      LLC-stores                                                            
+   <not supported>      LLC-store-misses                                                      
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+      23.036689994 seconds time elapsed
+
+       2.373690000 seconds user
+       1.607051000 seconds sys
+
+
+
+----------------------------------------
+k=76:
+# started on Tue Jul 15 22:13:30 2025
+
+
+ Performance counter stats for './part_chunk_demo -v -f /home/elcfin/shm -k 76 -b 32 -s 1 -o res_g7xlarge/results_20250715_220522/m4_b32_s8_k76.csv -x 76 -a 76 -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      LLC-loads                                                             
+   <not supported>      LLC-load-misses                                                       
+   <not supported>      LLC-stores                                                            
+   <not supported>      LLC-store-misses                                                      
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+      24.768924616 seconds time elapsed
+
+       3.018339000 seconds user
+       1.698191000 seconds sys
+
+
+
+----------------------------------------
+k=80:
+# started on Tue Jul 15 22:14:17 2025
+
+
+ Performance counter stats for './part_chunk_demo -v -f /home/elcfin/shm -k 80 -b 32 -s 1 -o res_g7xlarge/results_20250715_220522/m4_b32_s8_k80.csv -x 80 -a 80 -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      LLC-loads                                                             
+   <not supported>      LLC-load-misses                                                       
+   <not supported>      LLC-stores                                                            
+   <not supported>      LLC-store-misses                                                      
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+      25.502162287 seconds time elapsed
+
+       2.551158000 seconds user
+       1.823110000 seconds sys
+
+
+
+----------------------------------------
+k=84:
+# started on Tue Jul 15 22:15:06 2025
+
+
+ Performance counter stats for './part_chunk_demo -v -f /home/elcfin/shm -k 84 -b 32 -s 1 -o res_g7xlarge/results_20250715_220522/m4_b32_s8_k84.csv -x 84 -a 84 -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      LLC-loads                                                             
+   <not supported>      LLC-load-misses                                                       
+   <not supported>      LLC-stores                                                            
+   <not supported>      LLC-store-misses                                                      
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+      27.050119427 seconds time elapsed
+
+       2.967687000 seconds user
+       1.836375000 seconds sys
+
+
+
+----------------------------------------
+k=88:
+# started on Tue Jul 15 22:15:57 2025
+
+
+ Performance counter stats for './part_chunk_demo -v -f /home/elcfin/shm -k 88 -b 32 -s 1 -o res_g7xlarge/results_20250715_220522/m4_b32_s8_k88.csv -x 88 -a 88 -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      LLC-loads                                                             
+   <not supported>      LLC-load-misses                                                       
+   <not supported>      LLC-stores                                                            
+   <not supported>      LLC-store-misses                                                      
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+      28.306776352 seconds time elapsed
+
+       3.042749000 seconds user
+       1.941840000 seconds sys
+
+
+
+----------------------------------------
+k=8:
+# started on Tue Jul 15 22:07:13 2025
+
+
+ Performance counter stats for './part_chunk_demo -v -f /home/elcfin/shm -k 8 -b 32 -s 16 -o res_g7xlarge/results_20250715_220522/m4_b32_s8_k8.csv -x 8 -a 8 -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      LLC-loads                                                             
+   <not supported>      LLC-load-misses                                                       
+   <not supported>      LLC-stores                                                            
+   <not supported>      LLC-store-misses                                                      
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+      38.062408793 seconds time elapsed
+
+      11.119023000 seconds user
+       4.678321000 seconds sys
+
+
+
+----------------------------------------
+k=92:
+# started on Tue Jul 15 22:16:51 2025
+
+
+ Performance counter stats for './part_chunk_demo -v -f /home/elcfin/shm -k 92 -b 32 -s 1 -o res_g7xlarge/results_20250715_220522/m4_b32_s8_k92.csv -x 92 -a 92 -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      LLC-loads                                                             
+   <not supported>      LLC-load-misses                                                       
+   <not supported>      LLC-stores                                                            
+   <not supported>      LLC-store-misses                                                      
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+      29.678333115 seconds time elapsed
+
+       3.319004000 seconds user
+       2.155405000 seconds sys
+
+
+
+----------------------------------------
+k=96:
+# started on Tue Jul 15 22:17:48 2025
+
+
+ Performance counter stats for './part_chunk_demo -v -f /home/elcfin/shm -k 96 -b 32 -s 1 -o res_g7xlarge/results_20250715_220522/m4_b32_s8_k96.csv -x 96 -a 96 -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      LLC-loads                                                             
+   <not supported>      LLC-load-misses                                                       
+   <not supported>      LLC-stores                                                            
+   <not supported>      LLC-store-misses                                                      
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+      30.731421722 seconds time elapsed
+
+       3.216201000 seconds user
+       2.091985000 seconds sys
+
+
+
+----------------------------------------
