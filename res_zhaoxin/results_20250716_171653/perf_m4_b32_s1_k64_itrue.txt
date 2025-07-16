@@ -1,0 +1,30 @@
+# started on Wed Jul 16 17:21:43 2025
+
+
+ Performance counter stats for './code_demo -v -f /home/elcfin/shm -k 64 -b 32 -s 1 -o res_zhaoxin/results_20250716_171653/m4_b32_s1_k64_itrue.csv -i':
+
+         290510691      cache-references                                                        (35.66%)
+          11700179      cache-misses                     #    4.03% of all cache refs           (35.68%)
+        3091228665      L1-dcache-loads                                                         (35.73%)
+         281055546      L1-dcache-load-misses            #    9.09% of all L1-dcache accesses   (28.61%)
+        1529476445      L1-dcache-stores                                                        (28.61%)
+          90900669      L1-dcache-store-misses                                                  (28.59%)
+        4342656861      L1-icache-loads                                                         (28.62%)
+          28736832      L1-icache-load-misses            #    0.66% of all L1-icache accesses   (28.60%)
+   <not supported>      LLC-loads                                                             
+   <not supported>      LLC-load-misses                                                       
+   <not supported>      LLC-stores                                                            
+   <not supported>      LLC-store-misses                                                      
+        3095273536      dTLB-loads                                                              (28.58%)
+          14560451      dTLB-load-misses                 #    0.47% of all dTLB cache accesses  (28.60%)
+        1538749032      dTLB-stores                                                             (28.54%)
+           7182355      dTLB-store-misses                                                       (28.51%)
+                 0      iTLB-loads                                                              (35.67%)
+              3643      iTLB-load-misses                                                        (35.68%)
+
+       5.730733184 seconds time elapsed
+
+       2.690228000 seconds user
+       3.018889000 seconds sys
+
+
