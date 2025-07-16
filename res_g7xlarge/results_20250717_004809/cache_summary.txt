@@ -1,0 +1,612 @@
+=== Cache Performance Summary ===
+Generated on: Thu Jul 17 01:04:51 AM CST 2025
+
+k=100:
+# started on Thu Jul 17 00:56:16 2025
+
+
+ Performance counter stats for './code_demo -v -f /home/elcfin/shm -k 100 -b 32 -s 1 -o res_g7xlarge/results_20250717_004809/m4_b32_k100.csv -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+      31.398813211 seconds time elapsed
+
+       2.760549000 seconds user
+       2.111655000 seconds sys
+
+
+
+----------------------------------------
+k=104:
+# started on Thu Jul 17 00:57:16 2025
+
+
+ Performance counter stats for './code_demo -v -f /home/elcfin/shm -k 104 -b 32 -s 1 -o res_g7xlarge/results_20250717_004809/m4_b32_k104.csv -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+      32.635172317 seconds time elapsed
+
+       2.858935000 seconds user
+       2.183729000 seconds sys
+
+
+
+----------------------------------------
+k=108:
+# started on Thu Jul 17 00:58:19 2025
+
+
+ Performance counter stats for './code_demo -v -f /home/elcfin/shm -k 108 -b 32 -s 1 -o res_g7xlarge/results_20250717_004809/m4_b32_k108.csv -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+      33.933048149 seconds time elapsed
+
+       2.993642000 seconds user
+       2.276009000 seconds sys
+
+
+
+----------------------------------------
+k=112:
+# started on Thu Jul 17 00:59:25 2025
+
+
+ Performance counter stats for './code_demo -v -f /home/elcfin/shm -k 112 -b 32 -s 1 -o res_g7xlarge/results_20250717_004809/m4_b32_k112.csv -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+      35.158423913 seconds time elapsed
+
+       3.087213000 seconds user
+       2.345760000 seconds sys
+
+
+
+----------------------------------------
+k=116:
+# started on Thu Jul 17 01:00:33 2025
+
+
+ Performance counter stats for './code_demo -v -f /home/elcfin/shm -k 116 -b 32 -s 1 -o res_g7xlarge/results_20250717_004809/m4_b32_k116.csv -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+      36.159938277 seconds time elapsed
+
+       2.911155000 seconds user
+       2.469766000 seconds sys
+
+
+
+----------------------------------------
+k=120:
+# started on Thu Jul 17 01:01:43 2025
+
+
+ Performance counter stats for './code_demo -v -f /home/elcfin/shm -k 120 -b 32 -s 1 -o res_g7xlarge/results_20250717_004809/m4_b32_k120.csv -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+      37.536136470 seconds time elapsed
+
+       3.172146000 seconds user
+       2.520651000 seconds sys
+
+
+
+----------------------------------------
+k=124:
+# started on Thu Jul 17 01:02:56 2025
+
+
+ Performance counter stats for './code_demo -v -f /home/elcfin/shm -k 124 -b 32 -s 1 -o res_g7xlarge/results_20250717_004809/m4_b32_k124.csv -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+      38.946227082 seconds time elapsed
+
+       3.478144000 seconds user
+       2.564590000 seconds sys
+
+
+
+----------------------------------------
+k=128:
+# started on Thu Jul 17 01:04:11 2025
+
+
+ Performance counter stats for './code_demo -v -f /home/elcfin/shm -k 128 -b 32 -s 1 -o res_g7xlarge/results_20250717_004809/m4_b32_k128.csv -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+      40.229682950 seconds time elapsed
+
+       3.573276000 seconds user
+       2.683684000 seconds sys
+
+
+
+----------------------------------------
+k=16:
+# started on Thu Jul 17 00:48:19 2025
+
+
+ Performance counter stats for './code_demo -v -f /home/elcfin/shm -k 16 -b 32 -s 1 -o res_g7xlarge/results_20250717_004809/m4_b32_k16.csv -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+       4.824930482 seconds time elapsed
+
+       0.206220000 seconds user
+       0.410466000 seconds sys
+
+
+
+----------------------------------------
+k=32:
+# started on Thu Jul 17 00:48:33 2025
+
+
+ Performance counter stats for './code_demo -v -f /home/elcfin/shm -k 32 -b 32 -s 1 -o res_g7xlarge/results_20250717_004809/m4_b32_k32.csv -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+       9.621662243 seconds time elapsed
+
+       0.416401000 seconds user
+       0.748329000 seconds sys
+
+
+
+----------------------------------------
+k=4:
+# started on Thu Jul 17 00:48:09 2025
+
+
+ Performance counter stats for './code_demo -v -f /home/elcfin/shm -k 4 -b 32 -s 1 -o res_g7xlarge/results_20250717_004809/m4_b32_k4.csv -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+       0.813170311 seconds time elapsed
+
+       0.067408000 seconds user
+       0.138902000 seconds sys
+
+
+
+----------------------------------------
+k=64:
+# started on Thu Jul 17 00:49:01 2025
+
+
+ Performance counter stats for './code_demo -v -f /home/elcfin/shm -k 64 -b 32 -s 1 -o res_g7xlarge/results_20250717_004809/m4_b32_k64.csv -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+      19.480984910 seconds time elapsed
+
+       1.126981000 seconds user
+       1.386510000 seconds sys
+
+
+
+----------------------------------------
+k=68:
+# started on Thu Jul 17 00:49:40 2025
+
+
+ Performance counter stats for './code_demo -v -f /home/elcfin/shm -k 68 -b 32 -s 1 -o res_g7xlarge/results_20250717_004809/m4_b32_k68.csv -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+      20.720385661 seconds time elapsed
+
+       1.197698000 seconds user
+       1.489649000 seconds sys
+
+
+
+----------------------------------------
+k=72:
+# started on Thu Jul 17 00:50:21 2025
+
+
+ Performance counter stats for './code_demo -v -f /home/elcfin/shm -k 72 -b 32 -s 1 -o res_g7xlarge/results_20250717_004809/m4_b32_k72.csv -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+      21.633761814 seconds time elapsed
+
+       1.025194000 seconds user
+       1.521321000 seconds sys
+
+
+
+----------------------------------------
+k=76:
+# started on Thu Jul 17 00:51:04 2025
+
+
+ Performance counter stats for './code_demo -v -f /home/elcfin/shm -k 76 -b 32 -s 1 -o res_g7xlarge/results_20250717_004809/m4_b32_k76.csv -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+      22.855802004 seconds time elapsed
+
+       1.077252000 seconds user
+       1.618374000 seconds sys
+
+
+
+----------------------------------------
+k=80:
+# started on Thu Jul 17 00:51:49 2025
+
+
+ Performance counter stats for './code_demo -v -f /home/elcfin/shm -k 80 -b 32 -s 1 -o res_g7xlarge/results_20250717_004809/m4_b32_k80.csv -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+      25.096988662 seconds time elapsed
+
+       2.197560000 seconds user
+       1.683216000 seconds sys
+
+
+
+----------------------------------------
+k=84:
+# started on Thu Jul 17 00:52:38 2025
+
+
+ Performance counter stats for './code_demo -v -f /home/elcfin/shm -k 84 -b 32 -s 1 -o res_g7xlarge/results_20250717_004809/m4_b32_k84.csv -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+      26.358213943 seconds time elapsed
+
+       2.322140000 seconds user
+       1.752615000 seconds sys
+
+
+
+----------------------------------------
+k=88:
+# started on Thu Jul 17 00:53:29 2025
+
+
+ Performance counter stats for './code_demo -v -f /home/elcfin/shm -k 88 -b 32 -s 1 -o res_g7xlarge/results_20250717_004809/m4_b32_k88.csv -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+      27.649979369 seconds time elapsed
+
+       2.429365000 seconds user
+       1.869826000 seconds sys
+
+
+
+----------------------------------------
+k=8:
+# started on Thu Jul 17 00:48:12 2025
+
+
+ Performance counter stats for './code_demo -v -f /home/elcfin/shm -k 8 -b 32 -s 1 -o res_g7xlarge/results_20250717_004809/m4_b32_k8.csv -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+       2.440581511 seconds time elapsed
+
+       0.123737000 seconds user
+       0.223150000 seconds sys
+
+
+
+----------------------------------------
+k=92:
+# started on Thu Jul 17 00:54:22 2025
+
+
+ Performance counter stats for './code_demo -v -f /home/elcfin/shm -k 92 -b 32 -s 1 -o res_g7xlarge/results_20250717_004809/m4_b32_k92.csv -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+      29.024975463 seconds time elapsed
+
+       2.702116000 seconds user
+       1.913662000 seconds sys
+
+
+
+----------------------------------------
+k=96:
+# started on Thu Jul 17 00:55:18 2025
+
+
+ Performance counter stats for './code_demo -v -f /home/elcfin/shm -k 96 -b 32 -s 1 -o res_g7xlarge/results_20250717_004809/m4_b32_k96.csv -i':
+
+   <not supported>      cache-references                                                      
+   <not supported>      cache-misses                                                          
+   <not supported>      L1-dcache-loads                                                       
+   <not supported>      L1-dcache-load-misses                                                 
+   <not supported>      L1-dcache-stores                                                      
+   <not supported>      L1-dcache-store-misses                                                
+   <not supported>      L1-icache-loads                                                       
+   <not supported>      L1-icache-load-misses                                                 
+   <not supported>      dTLB-loads                                                            
+   <not supported>      dTLB-load-misses                                                      
+   <not supported>      dTLB-stores                                                           
+   <not supported>      dTLB-store-misses                                                     
+   <not supported>      iTLB-loads                                                            
+   <not supported>      iTLB-load-misses                                                      
+
+      29.853387568 seconds time elapsed
+
+       2.325215000 seconds user
+       2.057347000 seconds sys
+
+
+
+----------------------------------------
