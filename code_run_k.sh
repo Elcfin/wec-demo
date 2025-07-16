@@ -78,7 +78,7 @@ for k in "${k_values[@]}"; do
         
         # Start perf stat monitoring for cache statistics
         echo -e "[$(date '+%H:%M:%S')] Starting perf monitoring for cache statistics..."
-        perf stat -e cache-references,cache-misses,L1-dcache-loads,L1-dcache-load-misses,L1-dcache-stores,L1-dcache-store-misses,L1-icache-loads,L1-icache-load-misses,LLC-loads,LLC-load-misses,LLC-stores,LLC-store-misses,dTLB-loads,dTLB-load-misses,dTLB-stores,dTLB-store-misses,iTLB-loads,iTLB-load-misses -o "$PERF_FILE" $EXECUTABLE -v -f $f -k $k -b $b -s $s -o "${RESULTS_DIR}/${OUTPUT_BASE}_k$k.csv" $i_param > "$LOG_FILE" 2>&1
+        perf stat -e cache-references,cache-misses,L1-dcache-loads,L1-dcache-load-misses,L1-dcache-stores,L1-dcache-store-misses,L1-icache-loads,L1-icache-load-misses,dTLB-loads,dTLB-load-misses,dTLB-stores,dTLB-store-misses,iTLB-loads,iTLB-load-misses -o "$PERF_FILE" $EXECUTABLE -v -f $f -k $k -b $b -s $s -o "${RESULTS_DIR}/${OUTPUT_BASE}_k$k.csv" $i_param > "$LOG_FILE" 2>&1
         check_status "Execution for k=$k failed" || continue
         
         end_time=$(date +%s.%N)
