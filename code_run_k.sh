@@ -15,9 +15,9 @@ m=4
 b=32
 s=1
 f=/home/elcfin/shm
-# k_values=(4 8 16 32 64 68 72 76 80 84 88 92 96 100 104 108 112 116 120 124 128)
-k_values=(4 8 16 32 64 128)
-isal_flags=(true false)  # Array for isal flag
+k_values=(4 8 16 32 64 68 72 76 80 84 88 92 96 100 104 108 112 116 120 124 128)
+# k_values=(4 8 16 32 64 128)
+isal_flags=(true)  # Array for isal flag
 
 # Check if temporary directory exists, create it if not
 if [ ! -d "$f" ]; then
@@ -78,7 +78,19 @@ for k in "${k_values[@]}"; do
         
         # Start perf stat monitoring for cache statistics
         echo -e "[$(date '+%H:%M:%S')] Starting perf monitoring for cache statistics..."
-        perf stat -e cache-references,cache-misses,L1-dcache-loads,L1-dcache-load-misses,L1-dcache-stores,L1-dcache-store-misses,L1-icache-loads,L1-icache-load-misses,LLC-loads,LLC-load-misses,LLC-stores,LLC-store-misses,dTLB-loads,dTLB-load-misses,dTLB-stores,dTLB-store-misses,iTLB-loads,iTLB-load-misses -o "$PERF_FILE" $EXECUTABLE -v -f $f -k $k -b $b -s $s -o "${RESULTS_DIR}/${OUTPUT_BASE}_s${s}_k${k}_i${isal}.csv" $i_param > "$LOG_FILE" 2>&1
+        perf stat -e \
+            cache-references,cache-misses, \
+            L1-dcache-loads,L1-dcache-load-misses,L1-dcache-stores,L1-dcache-store-misses, \
+            L1-icache-loads,L1-icache-load-misses, \
+            LLC-loads,LLC-load-misses,LLC-stores,LLC-store-misses, \
+            dTLB-loads,dTLB-load-misses,dTLB-stores,dTLB-store-misses, \
+            iTLB-loads,iTLB-load-misses, \
+            # 添加 L2 缓存相关事件
+            L2_rqsts.all_rqsts,L2_rqsts.miss, \  # L2 总请求数和缺失数（通用）
+            L2-dcache-loads,L2-dcache-load-misses, \  # L2 数据加载及缺失（部分架构支持）
+            L2-dcache-stores,L2-dcache-store-misses \  # L2 数据存储及缺失（部分架构支持）
+            -o "$PERF_FILE" \
+            $EXECUTABLE -v -f $f -k $k -b $b -s $s -o "${RESULTS_DIR}/${OUTPUT_BASE}_s${s}_k${k}_i${isal}.csv" $i_param > "$LOG_FILE" 2>&1
         check_status "Execution for k=$k failed" || continue
         
         end_time=$(date +%s.%N)

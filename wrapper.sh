@@ -1,6 +1,6 @@
 #!/bin/bash
 # 定义运行次数（可修改为需要的次数）
-RUN_TIMES=5
+RUN_TIMES=1
 SH=code_run_k.sh
 
 # 循环运行
