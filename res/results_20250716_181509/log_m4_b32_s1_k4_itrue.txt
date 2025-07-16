@@ -1,0 +1,24 @@
+Intel ISA-L mode enabled.
+Verbose mode enabled.
+Output will be saved to: res/results_20250716_181509/m4_b32_s1_k4_itrue.csv
+Output file opened successfully.
+=== Starting single test ===
+Initializing temporary data files...
+Temporary data files initialized.
+=== Stripe Encoding Completed ===
+  Compute time: 0.075 seconds
+  I/O overhead: 0.338 seconds
+    - Read time: 0.329 seconds
+    - Network send time (simulated): 0.009 seconds
+  Total time: 0.416 seconds
+  Other overhead: 0.003 seconds
+
+=== In-Memory EC Encoding Completed ===
+Total encoding time: 0.424 seconds
+  Computation time: 0.075 seconds (17.6887% of total)
+  Computation throughput: 1706.67 MB/s
+  I/O overhead: 0.338 seconds (79.717% of total)
+    - Read time: 0.329 seconds
+    - Network send time (simulated): 0.009 seconds
+  Other overhead: 0.011 seconds (2.59434% of total)
+Encoding throughput: 301.887 MB/s

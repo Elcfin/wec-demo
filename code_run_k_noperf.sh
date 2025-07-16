@@ -12,7 +12,7 @@ trap cleanup EXIT
 # Global parameters for the experiment
 m=4
 b=32
-s=2
+s=1
 f=/home/elcfin/shm
 k_values=(4 8 16 32 64 128)
 isal_flags=(true false)  # Array for isal flag
