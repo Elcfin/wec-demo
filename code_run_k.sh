@@ -15,9 +15,9 @@ m=4
 b=32
 s=1
 f=/home/elcfin/shm
-# k_values=(4 8 16 32 64 68 72 76 80 84 88 92 96 100 104 108 112 116 120 124 128)
-k_values=(4 8 16 32 64 128)
-isal_flags=(true false)  # Array for isal flag
+k_values=(4 8 16 32 64 68 72 76 80 84 88 92 96 100 104 108 112 116 120 124 128)
+# k_values=(4 8 16 32 64 128)
+isal_flags=(true)  # Array for isal flag
 
 # Check if temporary directory exists, create it if not
 if [ ! -d "$f" ]; then
