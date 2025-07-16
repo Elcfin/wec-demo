@@ -1,0 +1,26 @@
+# started on Wed Jul 16 23:14:30 2025
+
+
+ Performance counter stats for './code_demo -v -f /home/elcfin/shm -k 124 -b 32 -s 1 -o res_zhaoxin/results_20250716_230803/m4_b32_k124.csv -i':
+
+         550986841      cache-references                                                        (35.72%)
+          23207239      cache-misses                     #    4.21% of all cache refs           (35.70%)
+        5968013239      L1-dcache-loads                                                         (35.72%)
+         588096082      L1-dcache-load-misses            #    9.85% of all L1-dcache accesses   (28.60%)
+        3039099823      L1-dcache-stores                                                        (28.61%)
+         166079102      L1-dcache-store-misses                                                  (28.60%)
+        8527304245      L1-icache-loads                                                         (28.59%)
+          56617984      L1-icache-load-misses            #    0.66% of all L1-icache accesses   (28.57%)
+        6000951256      dTLB-loads                                                              (28.54%)
+          56925180      dTLB-load-misses                 #    0.95% of all dTLB cache accesses  (28.54%)
+        3030123799      dTLB-stores                                                             (28.57%)
+          19471721      dTLB-store-misses                                                       (28.54%)
+                 0      iTLB-loads                                                              (35.68%)
+              7297      iTLB-load-misses                                                        (35.70%)
+
+      11.931141074 seconds time elapsed
+
+       5.804744000 seconds user
+       6.084732000 seconds sys
+
+
