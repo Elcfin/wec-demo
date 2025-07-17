@@ -1,0 +1,26 @@
+# started on Thu Jul 17 12:43:24 2025
+
+
+ Performance counter stats for './code_demo -v -f /home/elcfin/shm -k 112 -b 32 -s 1 -o res_g7xlarge/results_20250717_123508/m4_b32_k112.csv -i':
+
+         495628697      cache-references                                                        (35.64%)
+          20105601      cache-misses                     #    4.06% of all cache refs           (35.66%)
+        5381198906      L1-dcache-loads                                                         (35.72%)
+         572241008      L1-dcache-load-misses            #   10.63% of all L1-dcache accesses   (28.59%)
+        2735986093      L1-dcache-stores                                                        (28.64%)
+         148723589      L1-dcache-store-misses                                                  (28.63%)
+        7635862988      L1-icache-loads                                                         (28.61%)
+          50163306      L1-icache-load-misses            #    0.66% of all L1-icache accesses   (28.59%)
+        5391491668      dTLB-loads                                                              (28.61%)
+          71756232      dTLB-load-misses                 #    1.33% of all dTLB cache accesses  (28.57%)
+        2726185687      dTLB-stores                                                             (28.56%)
+          24183525      dTLB-store-misses                                                       (28.54%)
+                 0      iTLB-loads                                                              (35.69%)
+              5162      iTLB-load-misses                                                        (35.64%)
+
+      10.889840059 seconds time elapsed
+
+       4.999582000 seconds user
+       5.826183000 seconds sys
+
+

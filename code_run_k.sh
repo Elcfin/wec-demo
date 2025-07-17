@@ -15,9 +15,9 @@ m=4
 b=32
 s=1
 f=/home/elcfin/shm
-k_values=(4 8 16 32 64 68 72 76 80 84 88 92 96 100 104 108 112 116 120 124 128)
-# k_values=(4 8 16 32 64 128)
-isal_flags=(true)  # Array for isal flag
+# k_values=(4 8 16 32 64 68 72 76 80 84 88 92 96 100 104 108 112 116 120 124 128)
+k_values=(4 8 16 32 64 128)
+isal_flags=(true false)  # Array for isal flag
 
 # Check if temporary directory exists, create it if not
 if [ ! -d "$f" ]; then
@@ -30,7 +30,7 @@ if [ ! -d "$f" ]; then
 fi
 
 # Create results directory (include timestamp in name)
-RESULTS_DIR="res_g7xlarge/results_$(date +%Y%m%d_%H%M%S)"
+RESULTS_DIR="res_zhaoxin/results_$(date +%Y%m%d_%H%M%S)"
 mkdir -p "$RESULTS_DIR" || { echo "Failed to create results directory"; exit 1; }
 echo "All results will be saved to: $RESULTS_DIR"
 
@@ -53,6 +53,8 @@ for k in "${k_values[@]}"; do
         # s=$((128 / k))
 
         # Execute initialization command
+        echo "Clearing contents of temporary directory: $f"
+        rm -rf "$f"/* "$f"/.* 2>/dev/null
         echo -e "[$(date '+%H:%M:%S')] Executing initialization command: ./file_demo -f $f -k $k -b $b -s $s"
         INIT_LOG="$RESULTS_DIR/init_$(date +%H%M%S).log"
         ./file_demo -f $f -k $k -b $b -s $s > "$INIT_LOG" 2>&1
@@ -78,7 +80,8 @@ for k in "${k_values[@]}"; do
         
         # Start perf stat monitoring for cache statistics
         echo -e "[$(date '+%H:%M:%S')] Starting perf monitoring for cache statistics..."
-        perf stat -e cache-references,cache-misses,L1-dcache-loads,L1-dcache-load-misses,L1-dcache-stores,L1-dcache-store-misses,L1-icache-loads,L1-icache-load-misses,dTLB-loads,dTLB-load-misses,dTLB-stores,dTLB-store-misses,iTLB-loads,iTLB-load-misses -o "$PERF_FILE" $EXECUTABLE -v -f $f -k $k -b $b -s $s -o "${RESULTS_DIR}/${OUTPUT_BASE}_k$k.csv" $i_param > "$LOG_FILE" 2>&1
+        # perf stat -e cache-references,cache-misses,L1-dcache-loads,L1-dcache-load-misses,L1-dcache-stores,L1-dcache-store-misses,L1-icache-loads,L1-icache-load-misses,dTLB-loads,dTLB-load-misses,dTLB-stores,dTLB-store-misses,iTLB-loads,iTLB-load-misses -o "$PERF_FILE" $EXECUTABLE -v -f $f -k 4 -b $b -s $s -o "${RESULTS_DIR}/${OUTPUT_BASE}_k4_ifalse.csv" > "$LOG_FILE" 2>&1
+        perf stat -e cache-references,cache-misses,L1-dcache-loads,L1-dcache-load-misses,L1-dcache-stores,L1-dcache-store-misses,L1-icache-loads,L1-icache-load-misses,dTLB-loads,dTLB-load-misses,dTLB-stores,dTLB-store-misses,iTLB-loads,iTLB-load-misses -o "$PERF_FILE" $EXECUTABLE -v -f $f -k $k -b $b -s $s -o "${RESULTS_DIR}/${OUTPUT_BASE}_s${s}_k${k}_i${isal}.csv" $i_param > "$LOG_FILE" 2>&1
         check_status "Execution for k=$k failed" || continue
         
         end_time=$(date +%s.%N)
