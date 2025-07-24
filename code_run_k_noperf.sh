@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Function to cleanup processes (原perf相关清理逻辑移除，可根据实际补充)
+# Function to cleanup processes
 cleanup() {
     echo "Cleaning up temporary resources..."
     # 可根据实际需求补充清理逻辑，比如删除临时文件等
@@ -15,7 +15,7 @@ b=32
 s=1
 f=/home/elcfin/shm
 k_values=(4 8 16 32 64 128)
-isal_flags=(true false)  # Array for isal flag
+isal_flags=(true)  # Array for isal flag
 
 # Check if temporary directory exists, create it if not
 if [ ! -d "$f" ]; then
@@ -45,6 +45,28 @@ check_status() {
     return 0
 }
 
+# Function to get current CPU core of a process
+get_cpu_core() {
+    local pid=$1
+    # 获取进程当前运行的CPU核心
+    local core=$(ps -o psr= -p "$pid")
+    local core="${core#"${core%%[![:space:]]*}"}"  # 去除前导空格
+    echo "$core"
+}
+
+# Function to get current CPU frequency of a core
+get_cpu_frequency() {
+    local core="${1#"${1%%[![:space:]]*}"}"
+     # 从/proc/cpuinfo获取指定核心的当前频率（单位：MHz）
+    local freq=$(grep -A 10 "processor[[:space:]]*: $core" /proc/cpuinfo | grep "cpu MHz" | awk '{print $4}')
+    if [ -n "$freq" ]; then
+        echo "$freq"
+    else
+        echo "N/A"
+    fi
+}
+
+
 # Iterate through k values and execute commands
 for k in "${k_values[@]}"; do
     for isal in "${isal_flags[@]}"; do
@@ -67,9 +89,31 @@ for k in "${k_values[@]}"; do
 
         # Execute command and capture output 
         LOG_FILE="$RESULTS_DIR/log_${OUTPUT_BASE}_s${s}_k${k}_i${isal}.txt"
+        # CPU核心和频率监控日志文件
+        CPU_LOG="$RESULTS_DIR/cpu_${OUTPUT_BASE}_s${s}_k${k}_i${isal}.csv"
+        touch "$CPU_LOG"  # 创建空文件
+
+        # 写入表头
+        echo "timestamp,pid,core,frequency(MHz)" >> "$CPU_LOG"
+
         start_time=$(date +%s.%N)
         
-        $EXECUTABLE -v -f $f -k $k -b $b -s $s -o "${RESULTS_DIR}/${OUTPUT_BASE}_s${s}_k${k}_i${isal}.csv" $i_param > "$LOG_FILE" 2>&1
+        # 后台运行主程序并获取PID
+        $EXECUTABLE -v -f $f -k $k -b $b -s $s -o "${RESULTS_DIR}/${OUTPUT_BASE}_s${s}_k${k}_i${isal}.csv" $i_param > "$LOG_FILE" 2>&1 &
+        main_pid=$!
+        
+        # 定期记录CPU核心和频率信息到独立日志文件
+        echo "CPU core and frequency monitoring started for PID $main_pid" >> "$CPU_LOG"
+        while kill -0 $main_pid 2>/dev/null; do
+            core=$(get_cpu_core "$main_pid")
+            freq=$(get_cpu_frequency "$core")
+            timestamp=$(date +%s.%N)
+            echo "$timestamp,$main_pid,$core,$freq" >> "$CPU_LOG"  # 直接写入原始输出
+            sleep 0.5
+        done
+        
+        # 等待主程序完成并检查状态
+        wait $main_pid
         check_status "Execution for k=$k failed" || continue
         
         end_time=$(date +%s.%N)
@@ -77,6 +121,7 @@ for k in "${k_values[@]}"; do
         
         echo -e "[$(date '+%H:%M:%S')] Completed (Duration: ${elapsed}s)"
         echo "Log saved to: $LOG_FILE"
+        echo "CPU core and frequency log saved to: $CPU_LOG"
         echo "------------------------"
     done
 done
@@ -116,3 +161,4 @@ echo -e "\n=== Experiment Completed ==="
 echo "Results saved to: $RESULTS_DIR"
 echo "Merged CSV results: $MERGED_FILE"
 echo "Execution log files: $RESULTS_DIR/log_*.txt"
+echo "CPU core and frequency log files: $RESULTS_DIR/cpu_*.txt"
