@@ -1,7 +1,7 @@
 #!/bin/bash
 # 定义运行次数（可修改为需要的次数）
-RUN_TIMES=2
-SH=code_run_k.sh
+RUN_TIMES=10
+SH=code_run_k_noperf.sh
 
 # 循环运行
 for ((i=1; i<=RUN_TIMES; i++)); do
