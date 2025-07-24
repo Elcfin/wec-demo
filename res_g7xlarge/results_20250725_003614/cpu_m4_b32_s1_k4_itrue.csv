@@ -1,0 +1,4 @@
+timestamp,pid,core,frequency(MHz)
+CPU core and frequency monitoring started for PID 261577
+1753374974.646628946,261577,2,3499.288
+1753374975.157373722,261577,2,3505.675

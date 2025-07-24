@@ -28,7 +28,7 @@ if [ ! -d "$f" ]; then
 fi
 
 # Create results directory (include timestamp in name)
-RESULTS_DIR="res_zhaoxin/results_$(date +%Y%m%d_%H%M%S)"
+RESULTS_DIR="res_g7xlarge/results_$(date +%Y%m%d_%H%M%S)"
 mkdir -p "$RESULTS_DIR" || { echo "Failed to create results directory"; exit 1; }
 echo "All results will be saved to: $RESULTS_DIR"
 
@@ -135,8 +135,8 @@ grep "Encoding throughput" "$RESULTS_DIR"/*.txt | sort -k2 -n || echo "No throug
 echo -e "\n=== Merging CSV Files ==="
 MERGED_FILE="$RESULTS_DIR/${OUTPUT_BASE}_merged.csv"
 
-# Find the first CSV file to get the header
-FIRST_CSV=$(find "$RESULTS_DIR" -name "*.csv" -type f | sort | head -n 1)
+# Find the first CSV file to get the header (排除cpu开头的文件)
+FIRST_CSV=$(find "$RESULTS_DIR" -name "*.csv" -type f ! -name "cpu*.csv" | sort | head -n 1)
 if [ -z "$FIRST_CSV" ]; then
     echo "No CSV files found to merge."
     exit 1
@@ -146,9 +146,9 @@ fi
 head -n 1 "$FIRST_CSV" > "$MERGED_FILE"
 echo "Header extracted from: $(basename "$FIRST_CSV")"
 
-# Merge data from all CSVs (skipping headers)
+# Merge data from all CSVs (skipping headers,排除cpu开头的文件)
 echo "Merging data from:"
-find "$RESULTS_DIR" -name "*.csv" -type f | sort | while read -r csv_file; do
+find "$RESULTS_DIR" -name "*.csv" -type f ! -name "cpu*.csv" | sort | while read -r csv_file; do
     echo "  - $(basename "$csv_file")"
     tail -n +2 "$csv_file" >> "$MERGED_FILE"
 done
