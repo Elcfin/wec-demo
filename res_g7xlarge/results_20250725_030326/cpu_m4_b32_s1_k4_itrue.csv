@@ -1,0 +1,4 @@
+timestamp,pid,core,frequency(MHz)
+CPU core and frequency monitoring started for PID 379164
+1753383806.704618359,379164,1,3499.608
+1753383807.214690532,379164,3,3498.490

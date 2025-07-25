@@ -1,0 +1,2 @@
+k,m,block_size,total_data_size,encode_time,compute_time,io_time,other_time,isa-l
+32,4,32,1024,42.096,32.729,9.298,0.069,0
