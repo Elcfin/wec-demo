@@ -143,6 +143,8 @@ int main()
   );
   double ram_latency = ram_cycles * ns_per_cycle;
 
+  std::cout << "L1 Cache Latency (32KB): " << l1_cycles << " cycles" << std::endl;
+  std::cout << "RAM Latency (20MB): " << ram_cycles << " cycles" << std::endl;
   std::cout << "L1 Cache Latency: " << l1_latency << " ns" << std::endl;
   std::cout << "RAM Latency: " << ram_latency << " ns" << std::endl;
 
