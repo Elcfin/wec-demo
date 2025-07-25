@@ -57,6 +57,14 @@ $  g++ -o part_chunk_demo part_chunk_demo.cc -lisal
 $  ./part_chunk_demo -v -o k64_m4_b32_s16_batch -t
 ```
 
+## mem_latency_test
+
+### compile
+
+```Bash
+$  g++ -std=c++11 -O0 -fno-omit-frame-pointer -o mem_latency_test mem_latency_test.cc
+```
+
 ## CPU
 
 ```Bash

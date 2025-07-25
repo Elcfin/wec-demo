@@ -1,0 +1,28 @@
+Verbose mode enabled.
+Output will be saved to: res_g7xlarge/results_20250725_135749/m4_b32_s1_k84_ifalse.csv
+Output file opened successfully.
+=== Starting single test ===
+Initializing temporary data files...
+Temporary data files initialized.
+  Native RS Encode Timing Details:
+    Total compute time: 108.989s
+    Byte processing total: 99.3576s (91.1631%)
+    GF multiplication total: 92.2893s (84.6777%)
+    Per coding block times (avg): 27.2472s
+=== Stripe Encoding Completed ===
+  Compute time: 217.978 seconds
+  I/O overhead: 24.389 seconds
+    - Read time: 24.378 seconds
+    - Network send time (simulated): 0.011 seconds
+  Total time: 133.429 seconds
+  Other overhead: -108.938 seconds
+
+=== In-Memory EC Encoding Completed ===
+Total encoding time: 133.531 seconds
+  Computation time: 217.978 seconds (163.241% of total)
+  Computation throughput: 12.3315 MB/s
+  I/O overhead: 24.389 seconds (18.2647% of total)
+    - Read time: 24.378 seconds
+    - Network send time (simulated): 0.011 seconds
+  Other overhead: -108.836 seconds (-81.5061% of total)
+Encoding throughput: 20.1302 MB/s

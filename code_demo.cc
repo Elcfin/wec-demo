@@ -72,73 +72,40 @@ struct RSEncodeNativeTiming
 
 // Native implementation of Reed-Solomon erasure coding
 void rs_encode_data_native(
-    uint64_t len,                          // Length of each data/coding block in bytes
-    uint64_t k,                            // Number of data blocks
-    uint64_t m,                            // Number of coding blocks to produce
-    const uint8_t *encode_matrix_ptr,      // Pointer to the encoding matrix
-    uint8_t **data_ptrs,                   // Array of k pointers to data blocks
-    uint8_t **coding_ptrs,                 // Array of m pointers to coding blocks
-    RSEncodeNativeTiming *timing = nullptr // 新增：用于记录分段时间的指针（可选）
+    uint64_t len,                     // Length of each data/coding block in bytes
+    uint64_t k,                       // Number of data blocks
+    uint64_t m,                       // Number of coding blocks to produce
+    const uint8_t *encode_matrix_ptr, // Pointer to the encoding matrix
+    uint8_t **data_ptrs,              // Array of k pointers to data blocks
+    uint8_t **coding_ptrs             // Array of m pointers to coding blocks
 )
 {
-    // 记录函数总开始时间
-    auto total_start = high_resolution_clock::now();
-    if (timing)
-    {
-        timing->coding_block_times.resize(m); // 初始化每个编码块的时间容器
-        timing->byte_processing_total = 0.0;
-        timing->multiplication_total = 0.0;
-    }
-
-    // 外层循环：处理每个编码块
+    // Process each coding block
     for (uint64_t i = 0; i < m; i++)
     {
-        auto coding_block_start = high_resolution_clock::now(); // 编码块i的开始时间
-
-        // 中层循环：处理每个字节位置
+        // Process each byte position
         for (uint64_t byte_idx = 0; byte_idx < len; byte_idx++)
         {
             uint8_t *coding_byte = coding_ptrs[i] + byte_idx;
             uint8_t result = 0;
 
-            auto byte_start = high_resolution_clock::now(); // 字节处理开始时间
-
-            // 内层循环：处理每个数据块的字节，进行GF乘法和累加
-            auto mult_start = high_resolution_clock::now(); // 乘法运算开始时间
+            // For each data block
             for (uint64_t j = 0; j < k; j++)
             {
                 uint8_t data_byte = data_ptrs[j][byte_idx];
                 if (data_byte == 0)
-                    continue;
+                    continue; // Skip multiplication by zero
 
+                // Get coefficient from the encoding matrix
                 uint8_t coefficient = encode_matrix_ptr[i * k + j];
+
+                // Perform Galois Field multiplication and XOR to the result
                 result ^= gf.multiply(coefficient, data_byte);
             }
-            auto mult_end = high_resolution_clock::now(); // 乘法运算结束时间
 
+            // Store the result
             *coding_byte = result;
-            auto byte_end = high_resolution_clock::now(); // 字节处理结束时间
-
-            // 累加计时（仅当需要计时时）
-            if (timing)
-            {
-                timing->multiplication_total += duration_cast<duration<double>>(mult_end - mult_start).count();
-                timing->byte_processing_total += duration_cast<duration<double>>(byte_end - byte_start).count();
-            }
         }
-
-        auto coding_block_end = high_resolution_clock::now(); // 编码块i处理结束时间
-        if (timing)
-        {
-            timing->coding_block_times[i] = duration_cast<duration<double>>(coding_block_end - coding_block_start).count();
-        }
-    }
-
-    // 记录总时间
-    auto total_end = high_resolution_clock::now();
-    if (timing)
-    {
-        timing->total_time = duration_cast<duration<double>>(total_end - total_start).count();
     }
 }
 
@@ -279,23 +246,20 @@ void run_stripe(uint64_t k, uint64_t m, uint64_t block_size, uint64_t stripe_idx
     if (!isal)
     {
         // 初始化计时结构体
-        RSEncodeNativeTiming rs_timing;
-        rs_encode_data_native(block_size, k, m, encode_matrix_ptr, data_ptrs.data(), parity_ptrs.data(), &rs_timing);
-
-        // 将native编码的计时结果整合到metrics
-        metrics.compute_time = rs_timing.total_time;
+        // RSEncodeNativeTiming rs_timing;
+        rs_encode_data_native(block_size, k, m, encode_matrix_ptr, data_ptrs.data(), parity_ptrs.data() /* , &rs_timing */);
 
         // 若启用verbose模式，打印分段计时详情
         // if (verbose)
         // {
-        cout << "  Native RS Encode Timing Details:" << endl;
-        cout << "    Total compute time: " << rs_timing.total_time << "s" << endl;
-        cout << "    Byte processing total: " << rs_timing.byte_processing_total << "s ("
-             << (rs_timing.byte_processing_total / rs_timing.total_time * 100) << "%)" << endl;
-        cout << "    GF multiplication total: " << rs_timing.multiplication_total << "s ("
-             << (rs_timing.multiplication_total / rs_timing.total_time * 100) << "%)" << endl;
-        cout << "    Per coding block times (avg): "
-             << (accumulate(rs_timing.coding_block_times.begin(), rs_timing.coding_block_times.end(), 0.0) / m) << "s" << endl;
+        // cout << "  Native RS Encode Timing Details:" << endl;
+        // cout << "    Total compute time: " << rs_timing.total_time << "s" << endl;
+        // cout << "    Byte processing total: " << rs_timing.byte_processing_total << "s ("
+        //      << (rs_timing.byte_processing_total / rs_timing.total_time * 100) << "%)" << endl;
+        // cout << "    GF multiplication total: " << rs_timing.multiplication_total << "s ("
+        //      << (rs_timing.multiplication_total / rs_timing.total_time * 100) << "%)" << endl;
+        // cout << "    Per coding block times (avg): "
+        //      << (accumulate(rs_timing.coding_block_times.begin(), rs_timing.coding_block_times.end(), 0.0) / m) << "s" << endl;
         // }
     }
     else
