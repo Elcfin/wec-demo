@@ -1,6 +1,6 @@
 #!/bin/bash
 # 定义运行次数（可修改为需要的次数）
-RUN_TIMES=10
+RUN_TIMES=3
 SH=code_run_k_noperf.sh
 
 # 循环运行
