@@ -1,0 +1,28 @@
+Verbose mode enabled.
+Output will be saved to: res_zhaoxin/results_20250725_174741/m4_b32_s1_k32_ifalse.csv
+Output file opened successfully.
+=== Starting single test ===
+Initializing temporary data files...
+Temporary data files initialized.
+  Native RS Encode Timing Details:
+    Total compute time: 180.491s
+    Byte processing total: 156.275s (86.583%)
+    GF multiplication total: 142.343s (78.8645%)
+    Per coding block times (avg): 45.1227s
+=== Stripe Encoding Completed ===
+  Compute time: 360.982 seconds
+  I/O overhead: 1.59 seconds
+    - Read time: 1.565 seconds
+    - Network send time (simulated): 0.025 seconds
+  Total time: 182.096 seconds
+  Other overhead: -180.476 seconds
+
+=== In-Memory EC Encoding Completed ===
+Total encoding time: 182.265 seconds
+  Computation time: 360.982 seconds (198.053% of total)
+  Computation throughput: 2.83671 MB/s
+  I/O overhead: 1.59 seconds (0.872356% of total)
+    - Read time: 1.565 seconds
+    - Network send time (simulated): 0.025 seconds
+  Other overhead: -180.307 seconds (-98.9257% of total)
+Encoding throughput: 5.61819 MB/s
