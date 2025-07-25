@@ -1,0 +1,3 @@
+timestamp,pid,core,frequency(MHz)
+CPU core and frequency monitoring started for PID 713126
+1753385272.532766924,713126,7,2700.000
